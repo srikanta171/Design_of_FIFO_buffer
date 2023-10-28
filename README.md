@@ -1,4 +1,4 @@
-# Designing a FIFO Buffer - A Professional Guide
+# Designing a FIFO Buffer
 
 ## Introduction
 
