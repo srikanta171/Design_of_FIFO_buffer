@@ -1,0 +1,5 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(20Dec2023:14:55:02):( irun /home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v /home/vlsi1/23EC4224/project/fifo/rtl1/fifo_tb.v -access +rwc -coverage all -gui )

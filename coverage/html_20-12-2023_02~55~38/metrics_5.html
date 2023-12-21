@@ -1,0 +1,255 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="resources/imc.css"></link>
+<script type="text/javascript" src="resources/sortable.js"></script>
+<TITLE>IMC Report: Metrics Report</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Type-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="./index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="./resources/legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Type name: </B>status_signal<BR>
+
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Type-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">Assertion Status</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range95to99"><A HREF="">96.67%</A></TD>
+<TD class="range90to94"><A HREF="">94.44%&nbsp;(51/54)</A></TD>
+<TD class="range100"><A HREF="#_Blockcov">100.00%&nbsp;(15/15)</A></TD>
+<TD class="range100"><A HREF="#_Expressioncov">100.00%&nbsp;(9/9)</A></TD>
+<TD class="range90to94"><A HREF="#_Togglecov">90.00%&nbsp;(27/30)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">status_signal</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Block Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>status_signal<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered blocks: </B>15 of 15<BR>
+<B>Number of uncovered blocks: </B>0 of 15<BR>
+<B>Number of excluded blocks: </B>0<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    Exclusion [User-Reviewer]:Comment        
+-----------------------------------------------------------------------------------------------------------------------
+1      1     63    code block           62     begin                                                                   
+1      2     69    code block           68     begin                                                                   
+1      3     70    true part of         70     if(~rst_n) fifo_overflow &lt;=0;                                          
+1      4     71    false part of        70     else if((overflow_set==1)&&(fifo_rd==0))                                          
+1      5     72    true part of         71     fifo_overflow &lt;=1;                                                   
+1      6     73    false part of        71     else if(fifo_rd)                                                        
+1      7     74    true part of         73     fifo_overflow &lt;=0;                                                   
+1      8     76    false part of        73     fifo_overflow &lt;= fifo_overflow;                                          
+1      9     79    code block           78     begin                                                                   
+1      10    80    true part of         80     if(~rst_n) fifo_underflow &lt;=0;                                          
+1      11    81    false part of        80     else if((underflow_set==1)&&(fifo_we==0))                                          
+1      12    82    true part of         81     fifo_underflow &lt;=1;                                                  
+1      13    83    false part of        81     else if(fifo_we)                                                        
+1      14    84    true part of         83     fifo_underflow &lt;=0;                                                  
+1      15    86    false part of        83     fifo_underflow &lt;= fifo_underflow;                                          
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Expression Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>status_signal<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered expressions: </B>9 of 9<BR>
+<B>Number of uncovered expressions: </B>0 of 9<BR>
+<B>Number of excluded expressions: </B>0<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         Exclusion [User-Reviewer]:Comment        
+------------------------------------------------------------------------------------------------------------------------------
+1.1    | 100.00% (3/3) | 66     | (pointer_result[4] || pointer_result[3])                                                    
+2.1    | 100.00% (3/3) | 71     | (overflow_set == 1) && (fifo_rd == 0)                                                       
+3.1    | 100.00% (3/3) | 81     | (underflow_set == 1) && (fifo_we == 0)                                                      
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>100.00% (3/3)</B><B> line: </B><B>66</B><B> source: </B><B>fifo_threshold = (pointer_result[4]||pointer_result[3]) ? 1:0;</B>
+
+(pointer_result[4] || pointer_result[3])<BR>
+ <B><</B>-------<B>1</B>-------<B>></B>    <B><</B>-------<B>2</B>-------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; Exclusion [User-Reviewer]:Comment        
+--------------------------------------------------------------------- '||'
+1.1.1     | 1     | 1   -                                            
+1.1.2     | 1     | -   1                                            
+1.1.3     | 1     | 0   0                                            
+
+<B>index: </B><B>2.1</B><B> grade: </B><B>100.00% (3/3)</B><B> line: </B><B>71</B><B> source: </B><B>else if((overflow_set==1)&&(fifo_rd==0))</B>
+
+(overflow_set == 1) && (fifo_rd == 0)<BR>
+<B><</B>--------<B>1</B>--------<B>></B>     <B><</B>--<B>2</B>--<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; Exclusion [User-Reviewer]:Comment        
+----------------------------------------------------------------------------
+2.1.1     | 1     | 1    | 1   0                                            
+2.1.2     | 1     | 0    | -   1                                            
+2.1.3     | 1     | 0    | 0   -                                            
+
+<B>index: </B><B>3.1</B><B> grade: </B><B>100.00% (3/3)</B><B> line: </B><B>81</B><B> source: </B><B>else if((underflow_set==1)&&(fifo_we==0))</B>
+
+(underflow_set == 1) && (fifo_we == 0)<BR>
+<B><</B>--------<B>1</B>---------<B>></B>     <B><</B>--<B>2</B>--<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; Exclusion [User-Reviewer]:Comment        
+----------------------------------------------------------------------------
+3.1.1     | 1     | 1    | 1   0                                            
+3.1.2     | 1     | 0    | -   1                                            
+3.1.3     | 1     | 0    | 0   -                                            
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Toggle Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>status_signal<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered signal bits: </B>27 of 30<BR>
+<B>Number of uncovered signal bits: </B>3 of 30<BR>
+<B>Number of excluded signal bits: </B>0<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>3 of 30<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 30<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    Exclusion [User-Reviewer]:Comment        
+----------------------------------------------------------------------------------------------------
+1          1          1          wr                                                                 
+1          1          1          rd                                                                 
+1          1          1          fifo_we                                                            
+1          1          1          fifo_rd                                                            
+1          1          1          clk                                                                
+1          1          1          rst_n                                                              
+0          1          0          wptr[4]                                                            
+1          1          1          wptr[3]                                                            
+1          1          1          wptr[2]                                                            
+1          1          1          wptr[1]                                                            
+1          1          1          wptr[0]                                                            
+0          1          0          rptr[4]                                                            
+1          1          1          rptr[3]                                                            
+1          1          1          rptr[2]                                                            
+1          1          1          rptr[1]                                                            
+1          1          1          rptr[0]                                                            
+1          1          1          fifo_full                                                          
+1          1          1          fifo_empty                                                         
+1          1          1          fifo_threshold                                                     
+1          1          1          fifo_overflow                                                      
+0          1          0          fifo_underflow                                                     
+1          1          1          fbit_comp                                                          
+1          1          1          overflow_set                                                       
+1          1          1          underflow_set                                                      
+1          1          1          pointer_equal                                                      
+1          1          1          pointer_result[4]                                                  
+1          1          1          pointer_result[3]                                                  
+1          1          1          pointer_result[2]                                                  
+1          1          1          pointer_result[1]                                                  
+1          1          1          pointer_result[0]                                                  
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Fsm Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>status_signal<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Assertion Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>status_signal<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered assertions: </B>0 of 0<BR>
+<B>Number of uncovered assertions: </B>0 of 0<BR>
+<B>Number of excluded assertions: </B>0<BR>
+<B>Number of covered formal Properties: </B>0 of 0<BR>
+<B>Number of uncovered formal Properties: </B>0 of 0<BR>
+<B>Number of excluded formal Properties: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Vacuous  Attempt  Disabled Status          Formal Finished   Formal Failed  Formal Proved     Formal Passed     Formal CEX        Formal Status   Assertion                      Line  Source Code                    Exclusion [User-Reviewer]:Comment        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>status_signal<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

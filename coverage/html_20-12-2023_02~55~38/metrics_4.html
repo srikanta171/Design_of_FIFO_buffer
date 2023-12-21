@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="resources/imc.css"></link>
+<script type="text/javascript" src="resources/sortable.js"></script>
+<TITLE>IMC Report: Metrics Report</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Type-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="./index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="./resources/legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Type name: </B>memory_array<BR>
+
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Type-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">Assertion Status</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range80to84"><A HREF="">83.93%</A></TD>
+<TD class="range70to74"><A HREF="">70.97%&nbsp;(22/31)</A></TD>
+<TD class="range100"><A HREF="#_Blockcov">100.00%&nbsp;(3/3)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="range65to69"><A HREF="#_Togglecov">67.86%&nbsp;(19/28)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">memory_array</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Block Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>memory_array<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered blocks: </B>3 of 3<BR>
+<B>Number of uncovered blocks: </B>0 of 3<BR>
+<B>Number of excluded blocks: </B>0<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    Exclusion [User-Reviewer]:Comment        
+-----------------------------------------------------------------------------------------------------------------------
+1      1     24    code block           23     begin                                                                   
+1      2     26    true part of         25     data_out2[wptr[3:0]] &lt;=data_in ;                                          
+1      3     25    implicit else        25     if(fifo_we)                                                             
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Expression Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>memory_array<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered expressions: </B>0 of 0<BR>
+<B>Number of uncovered expressions: </B>0 of 0<BR>
+<B>Number of excluded expressions: </B>0<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         Exclusion [User-Reviewer]:Comment        
+------------------------------------------------------------------------------------------------------------------------------
+
+
+0 items found
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Toggle Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>memory_array<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered signal bits: </B>19 of 28<BR>
+<B>Number of uncovered signal bits: </B>9 of 28<BR>
+<B>Number of excluded signal bits: </B>0<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>3 of 28<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 28<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    Exclusion [User-Reviewer]:Comment        
+----------------------------------------------------------------------------------------------------
+0          0          0          data_in[7]                                                         
+0          0          0          data_in[6]                                                         
+0          0          0          data_in[5]                                                         
+0          1          0          data_in[4]                                                         
+1          1          1          data_in[3]                                                         
+1          1          1          data_in[2]                                                         
+1          1          1          data_in[1]                                                         
+1          1          1          data_in[0]                                                         
+1          1          1          clk                                                                
+1          1          1          fifo_we                                                            
+0          1          0          wptr[4]                                                            
+1          1          1          wptr[3]                                                            
+1          1          1          wptr[2]                                                            
+1          1          1          wptr[1]                                                            
+1          1          1          wptr[0]                                                            
+0          1          0          rptr[4]                                                            
+1          1          1          rptr[3]                                                            
+1          1          1          rptr[2]                                                            
+1          1          1          rptr[1]                                                            
+1          1          1          rptr[0]                                                            
+0          0          0          data_out[7]                                                        
+0          0          0          data_out[6]                                                        
+0          0          0          data_out[5]                                                        
+1          1          1          data_out[4]                                                        
+1          1          1          data_out[3]                                                        
+1          1          1          data_out[2]                                                        
+1          1          1          data_out[1]                                                        
+1          1          1          data_out[0]                                                        
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Fsm Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>memory_array<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR Assertion Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>memory_array<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered assertions: </B>0 of 0<BR>
+<B>Number of uncovered assertions: </B>0 of 0<BR>
+<B>Number of excluded assertions: </B>0<BR>
+<B>Number of covered formal Properties: </B>0 of 0<BR>
+<B>Number of uncovered formal Properties: </B>0 of 0<BR>
+<B>Number of excluded formal Properties: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Vacuous  Attempt  Disabled Status          Formal Finished   Formal Failed  Formal Proved     Formal Passed     Formal CEX        Formal Status   Assertion                      Line  Source Code                    Exclusion [User-Reviewer]:Comment        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Type Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Type name: </B>memory_array<BR>
+<B>File name: </B><A HREF="/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v" TARGET="_blank">/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
