@@ -1,0 +1,211 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.7-64b 04/17/2018 19:57 (sjfhw310) $
+          : sub-version  IC6.1.7-64b.500.19 
+Started at: 20-Dec-2023  13:03:09
+User Name : vlsi1
+Host Name : cadence1
+Directory : /home/vlsi1/23EC4224/project/fifo/fifo_virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'FIFO_LIB' is attached to the technology library 'ts018_scl_prim'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+INFO (XSTRM-217): Reading the layer map file, /home/vlsi1/Downloads/scl_pdk/design_kit/pdklib/cadence/OA/ts018_compana_4M1L_OA/rev0.0/ref_libs/ts018_scl_prim/ts018_scl_prim.layermap
+INFO (XSTRM-217): Reading the object map file, /home/vlsi1/Downloads/scl_pdk/design_kit/pdklib/cadence/OA/ts018_compana_4M1L_OA/rev0.0/ref_libs/ts018_scl_prim/ts018_scl_prim.objectmap
+WARNING (XSTRM-155): Ignoring the Stream layer:datatype pair '235:0' at row '1' in the object map file '/home/vlsi1/Downloads/scl_pdk/design_kit/pdklib/cadence/OA/ts018_compana_4M1L_OA/rev0.0/ref_libs/ts018_scl_prim/ts018_scl_prim.objectmap' because it is also defined in the layer map file. Additionally, shapes in GDS on '235:0' with properties indicating they were translated from objects in the OpenAccess database will be translated back to objects. The remaining shapes will be translated to shapes.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				FIFO_LIB
+	strmFile			/home/vlsi1/23EC4224/project/fifo/physical_design/fifo.gds
+	logFile				strmIn.log
+	view				layout
+	case				Preserve
+	layerMap			/home/vlsi1/Downloads/scl_pdk/design_kit/pdklib/cadence/OA/ts018_compana_4M1L_OA/rev0.0/ref_libs/ts018_scl_prim/ts018_scl_prim.layermap
+	propSeparator			,
+	attachTechFileOfLib				ts018_scl_prim
+	objectMap			 /home/vlsi1/Downloads/scl_pdk/design_kit/pdklib/cadence/OA/ts018_compana_4M1L_OA/rev0.0/ref_libs/ts018_scl_prim/ts018_scl_prim.objectmap
+
+INFO (XSTRM-220): 1. Translating STRUCTURE bufbd7 as cellView FIFO_LIB/bufbd7/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE buffd7 as cellView FIFO_LIB/buffd7/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE nd03d1 as cellView FIFO_LIB/nd03d1/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE buffd1 as cellView FIFO_LIB/buffd1/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE nd02d1 as cellView FIFO_LIB/nd02d1/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE nr02d1 as cellView FIFO_LIB/nr02d1/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE nd13d1 as cellView FIFO_LIB/nd13d1/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE nd13d2 as cellView FIFO_LIB/nd13d2/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE nd12d2 as cellView FIFO_LIB/nd12d2/layout.
+INFO (XSTRM-220): 10. Translating STRUCTURE an02d1 as cellView FIFO_LIB/an02d1/layout.
+INFO (XSTRM-220): 11. Translating STRUCTURE inv0d0 as cellView FIFO_LIB/inv0d0/layout.
+INFO (XSTRM-220): 12. Translating STRUCTURE nd12d1 as cellView FIFO_LIB/nd12d1/layout.
+INFO (XSTRM-220): 13. Translating STRUCTURE oai211d1 as cellView FIFO_LIB/oai211d1/layout.
+INFO (XSTRM-220): 14. Translating STRUCTURE an12d1 as cellView FIFO_LIB/an12d1/layout.
+INFO (XSTRM-220): 15. Translating STRUCTURE ora21d1 as cellView FIFO_LIB/ora21d1/layout.
+INFO (XSTRM-220): 16. Translating STRUCTURE or02d1 as cellView FIFO_LIB/or02d1/layout.
+INFO (XSTRM-220): 17. Translating STRUCTURE nr02d2 as cellView FIFO_LIB/nr02d2/layout.
+INFO (XSTRM-220): 18. Translating STRUCTURE nd04d1 as cellView FIFO_LIB/nd04d1/layout.
+INFO (XSTRM-220): 19. Translating STRUCTURE oai21d1 as cellView FIFO_LIB/oai21d1/layout.
+INFO (XSTRM-220): 20. Translating STRUCTURE inv0d1 as cellView FIFO_LIB/inv0d1/layout.
+INFO (XSTRM-220): 21. Translating STRUCTURE nd02d2 as cellView FIFO_LIB/nd02d2/layout.
+INFO (XSTRM-220): 22. Translating STRUCTURE an02d4 as cellView FIFO_LIB/an02d4/layout.
+INFO (XSTRM-220): 23. Translating STRUCTURE nr02d0 as cellView FIFO_LIB/nr02d0/layout.
+INFO (XSTRM-220): 24. Translating STRUCTURE inv0d2 as cellView FIFO_LIB/inv0d2/layout.
+INFO (XSTRM-220): 25. Translating STRUCTURE dfnrq1 as cellView FIFO_LIB/dfnrq1/layout.
+INFO (XSTRM-220): 26. Translating STRUCTURE mx02d1 as cellView FIFO_LIB/mx02d1/layout.
+INFO (XSTRM-220): 27. Translating STRUCTURE oaim22d1 as cellView FIFO_LIB/oaim22d1/layout.
+INFO (XSTRM-220): 28. Translating STRUCTURE dfnrq4 as cellView FIFO_LIB/dfnrq4/layout.
+INFO (XSTRM-220): 29. Translating STRUCTURE aoi21d1 as cellView FIFO_LIB/aoi21d1/layout.
+INFO (XSTRM-220): 30. Translating STRUCTURE dfcrq1 as cellView FIFO_LIB/dfcrq1/layout.
+INFO (XSTRM-220): 31. Translating STRUCTURE decrq4 as cellView FIFO_LIB/decrq4/layout.
+INFO (XSTRM-220): 32. Translating STRUCTURE aor21d1 as cellView FIFO_LIB/aor21d1/layout.
+INFO (XSTRM-220): 33. Translating STRUCTURE nd02d0 as cellView FIFO_LIB/nd02d0/layout.
+INFO (XSTRM-220): 34. Translating STRUCTURE oai22d1 as cellView FIFO_LIB/oai22d1/layout.
+INFO (XSTRM-220): 35. Translating STRUCTURE nd12d4 as cellView FIFO_LIB/nd12d4/layout.
+INFO (XSTRM-220): 36. Translating STRUCTURE nd12d0 as cellView FIFO_LIB/nd12d0/layout.
+INFO (XSTRM-220): 37. Translating STRUCTURE nr02da as cellView FIFO_LIB/nr02da/layout.
+INFO (XSTRM-220): 38. Translating STRUCTURE nd04d0 as cellView FIFO_LIB/nd04d0/layout.
+INFO (XSTRM-220): 39. Translating STRUCTURE aoi222d1 as cellView FIFO_LIB/aoi222d1/layout.
+INFO (XSTRM-220): 40. Translating STRUCTURE aoi22d1 as cellView FIFO_LIB/aoi22d1/layout.
+INFO (XSTRM-220): 41. Translating STRUCTURE aoim22d1 as cellView FIFO_LIB/aoim22d1/layout.
+INFO (XSTRM-220): 42. Translating STRUCTURE dfcrb2 as cellView FIFO_LIB/dfcrb2/layout.
+INFO (XSTRM-220): 43. Translating STRUCTURE dfcrb1 as cellView FIFO_LIB/dfcrb1/layout.
+INFO (XSTRM-220): 44. Translating STRUCTURE subil_m_via5 as cellView FIFO_LIB/subil_m_via5/layout.
+INFO (XSTRM-220): 45. Translating STRUCTURE subil_m_via4 as cellView FIFO_LIB/subil_m_via4/layout.
+INFO (XSTRM-220): 46. Translating STRUCTURE subil_m_via3 as cellView FIFO_LIB/subil_m_via3/layout.
+INFO (XSTRM-220): 47. Translating STRUCTURE subil_psegment as cellView FIFO_LIB/subil_psegment/layout.
+INFO (XSTRM-220): 48. Translating STRUCTURE subil_m_via2 as cellView FIFO_LIB/subil_m_via2/layout.
+INFO (XSTRM-220): 49. Translating STRUCTURE subil_m_via as cellView FIFO_LIB/subil_m_via/layout.
+INFO (XSTRM-220): 50. Translating STRUCTURE subil_cornerarray as cellView FIFO_LIB/subil_cornerarray/layout.
+INFO (XSTRM-220): 51. Translating STRUCTURE subil_via2array as cellView FIFO_LIB/subil_via2array/layout.
+INFO (XSTRM-220): 52. Translating STRUCTURE subil_via1array as cellView FIFO_LIB/subil_via1array/layout.
+INFO (XSTRM-220): 53. Translating STRUCTURE subil_padmetal as cellView FIFO_LIB/subil_padmetal/layout.
+INFO (XSTRM-220): 54. Translating STRUCTURE subil_pad as cellView FIFO_LIB/subil_pad/layout.
+INFO (XSTRM-220): 55. Translating STRUCTURE subil_pngatebuff as cellView FIFO_LIB/subil_pngatebuff/layout.
+INFO (XSTRM-220): 56. Translating STRUCTURE subil_pngate2buff as cellView FIFO_LIB/subil_pngate2buff/layout.
+INFO (XSTRM-220): 57. Translating STRUCTURE subil_pngatering as cellView FIFO_LIB/subil_pngatering/layout.
+INFO (XSTRM-220): 58. Translating STRUCTURE subil_pnbuff as cellView FIFO_LIB/subil_pnbuff/layout.
+INFO (XSTRM-220): 59. Translating STRUCTURE VCELLA23 as cellView FIFO_LIB/VCELLA23/layout.
+INFO (XSTRM-220): 60. Translating STRUCTURE subil_m_cc as cellView FIFO_LIB/subil_m_cc/layout.
+INFO (XSTRM-220): 61. Translating STRUCTURE subil_ppolyres as cellView FIFO_LIB/subil_ppolyres/layout.
+INFO (XSTRM-220): 62. Translating STRUCTURE subil_pbbuffcon as cellView FIFO_LIB/subil_pbbuffcon/layout.
+INFO (XSTRM-220): 63. Translating STRUCTURE subil_powermetal as cellView FIFO_LIB/subil_powermetal/layout.
+INFO (XSTRM-220): 64. Translating STRUCTURE subil_iorule as cellView FIFO_LIB/subil_iorule/layout.
+INFO (XSTRM-220): 65. Translating STRUCTURE subil_ppgate2buffend as cellView FIFO_LIB/subil_ppgate2buffend/layout.
+INFO (XSTRM-220): 66. Translating STRUCTURE subil_ppgatebotring as cellView FIFO_LIB/subil_ppgatebotring/layout.
+INFO (XSTRM-220): 67. Translating STRUCTURE subil_ppgatebuff as cellView FIFO_LIB/subil_ppgatebuff/layout.
+INFO (XSTRM-220): 68. Translating STRUCTURE subil_ppgate2buff as cellView FIFO_LIB/subil_ppgate2buff/layout.
+INFO (XSTRM-220): 69. Translating STRUCTURE subil_ppgate2bufftop as cellView FIFO_LIB/subil_ppgate2bufftop/layout.
+INFO (XSTRM-220): 70. Translating STRUCTURE subil_ppgatering as cellView FIFO_LIB/subil_ppgatering/layout.
+INFO (XSTRM-220): 71. Translating STRUCTURE subil_ppbuff as cellView FIFO_LIB/subil_ppbuff/layout.
+INFO (XSTRM-220): 72. Translating STRUCTURE VCELLA42 as cellView FIFO_LIB/VCELLA42/layout.
+INFO (XSTRM-220): 73. Translating STRUCTURE subil_nwellres as cellView FIFO_LIB/subil_nwellres/layout.
+INFO (XSTRM-220): 74. Translating STRUCTURE subil_pdwellbias as cellView FIFO_LIB/subil_pdwellbias/layout.
+INFO (XSTRM-220): 75. Translating STRUCTURE rpmpoly2t$$44660780 as cellView FIFO_LIB/rpmpoly2t$$44660780/layout.
+INFO (XSTRM-220): 76. Translating STRUCTURE subil_m_ccp as cellView FIFO_LIB/subil_m_ccp/layout.
+INFO (XSTRM-220): 77. Translating STRUCTURE subil_pp18input01 as cellView FIFO_LIB/subil_pp18input01/layout.
+INFO (XSTRM-220): 78. Translating STRUCTURE subil_preside as cellView FIFO_LIB/subil_preside/layout.
+INFO (XSTRM-220): 79. Translating STRUCTURE subil_ppdrive as cellView FIFO_LIB/subil_ppdrive/layout.
+INFO (XSTRM-220): 80. Translating STRUCTURE subil_p18vdd32 as cellView FIFO_LIB/subil_p18vdd32/layout.
+INFO (XSTRM-220): 81. Translating STRUCTURE subil_vddring as cellView FIFO_LIB/subil_vddring/layout.
+INFO (XSTRM-220): 82. Translating STRUCTURE subil_vddcell1 as cellView FIFO_LIB/subil_vddcell1/layout.
+INFO (XSTRM-220): 83. Translating STRUCTURE subil_pp18esdinp as cellView FIFO_LIB/subil_pp18esdinp/layout.
+INFO (XSTRM-220): 84. Translating STRUCTURE subil_pddrive01 as cellView FIFO_LIB/subil_pddrive01/layout.
+INFO (XSTRM-220): 85. Translating STRUCTURE subil_pcd21con as cellView FIFO_LIB/subil_pcd21con/layout.
+INFO (XSTRM-220): 86. Translating STRUCTURE subil_pdblockcell as cellView FIFO_LIB/subil_pdblockcell/layout.
+INFO (XSTRM-220): 87. Translating STRUCTURE pc3d01 as cellView FIFO_LIB/pc3d01/layout.
+INFO (XSTRM-220): 88. Translating STRUCTURE subil_clkpngatering as cellView FIFO_LIB/subil_clkpngatering/layout.
+INFO (XSTRM-220): 89. Translating STRUCTURE subil_pnclkbasebuff as cellView FIFO_LIB/subil_pnclkbasebuff/layout.
+INFO (XSTRM-220): 90. Translating STRUCTURE subil_pnclkbuff as cellView FIFO_LIB/subil_pnclkbuff/layout.
+INFO (XSTRM-220): 91. Translating STRUCTURE subil_pp18clkdrive as cellView FIFO_LIB/subil_pp18clkdrive/layout.
+INFO (XSTRM-220): 92. Translating STRUCTURE subil_clkpowermetal as cellView FIFO_LIB/subil_clkpowermetal/layout.
+INFO (XSTRM-220): 93. Translating STRUCTURE subil_dio46 as cellView FIFO_LIB/subil_dio46/layout.
+INFO (XSTRM-220): 94. Translating STRUCTURE subil_pp18clkout as cellView FIFO_LIB/subil_pp18clkout/layout.
+INFO (XSTRM-220): 95. Translating STRUCTURE subil_pp18clkin as cellView FIFO_LIB/subil_pp18clkin/layout.
+INFO (XSTRM-220): 96. Translating STRUCTURE subil_pp18clkinout as cellView FIFO_LIB/subil_pp18clkinout/layout.
+INFO (XSTRM-220): 97. Translating STRUCTURE subil_clk1x as cellView FIFO_LIB/subil_clk1x/layout.
+INFO (XSTRM-220): 98. Translating STRUCTURE subil_clkppgatebotring as cellView FIFO_LIB/subil_clkppgatebotring/layout.
+INFO (XSTRM-220): 99. Translating STRUCTURE subil_clkppbasebuff as cellView FIFO_LIB/subil_clkppbasebuff/layout.
+INFO (XSTRM-220): 100. Translating STRUCTURE subil_clkppgatering as cellView FIFO_LIB/subil_clkppgatering/layout.
+INFO (XSTRM-220): 101. Translating STRUCTURE subil_ppclkbuff as cellView FIFO_LIB/subil_ppclkbuff/layout.
+INFO (XSTRM-220): 102. Translating STRUCTURE subil_clkblockcell as cellView FIFO_LIB/subil_clkblockcell/layout.
+INFO (XSTRM-220): 103. Translating STRUCTURE pc3c01 as cellView FIFO_LIB/pc3c01/layout.
+INFO (XSTRM-220): 104. Translating STRUCTURE subil_midconer2 as cellView FIFO_LIB/subil_midconer2/layout.
+INFO (XSTRM-220): 105. Translating STRUCTURE pfrelr as cellView FIFO_LIB/pfrelr/layout.
+INFO (XSTRM-220): 106. Translating STRUCTURE subil_pviblockcell as cellView FIFO_LIB/subil_pviblockcell/layout.
+INFO (XSTRM-220): 107. Translating STRUCTURE subil_pngatebuff_ESD122 as cellView FIFO_LIB/subil_pngatebuff_ESD122/layout.
+INFO (XSTRM-220): 108. Translating STRUCTURE subil_pngate2buff_ESD122 as cellView FIFO_LIB/subil_pngate2buff_ESD122/layout.
+INFO (XSTRM-220): 109. Translating STRUCTURE subil_pngatering22 as cellView FIFO_LIB/subil_pngatering22/layout.
+INFO (XSTRM-220): 110. Translating STRUCTURE subil_pnbuff_ESD122 as cellView FIFO_LIB/subil_pnbuff_ESD122/layout.
+INFO (XSTRM-220): 111. Translating STRUCTURE subil_iorulepower as cellView FIFO_LIB/subil_iorulepower/layout.
+INFO (XSTRM-220): 112. Translating STRUCTURE subil_ppgatebuffpower_0di_ESD22 as cellView FIFO_LIB/subil_ppgatebuffpower_0di_ESD22/layout.
+INFO (XSTRM-220): 113. Translating STRUCTURE subil_ppgate2buffpower_0di_ESD22 as cellView FIFO_LIB/subil_ppgate2buffpower_0di_ESD22/layout.
+INFO (XSTRM-220): 114. Translating STRUCTURE subil_ppgatebotringpower_0di as cellView FIFO_LIB/subil_ppgatebotringpower_0di/layout.
+INFO (XSTRM-220): 115. Translating STRUCTURE subil_ppgateringpower_0di as cellView FIFO_LIB/subil_ppgateringpower_0di/layout.
+INFO (XSTRM-220): 116. Translating STRUCTURE subil_ppbuffpower_0di_ESD22 as cellView FIFO_LIB/subil_ppbuffpower_0di_ESD22/layout.
+INFO (XSTRM-220): 117. Translating STRUCTURE subil_presistorpower as cellView FIFO_LIB/subil_presistorpower/layout.
+INFO (XSTRM-220): 118. Translating STRUCTURE subil_powerbasecon_ESD as cellView FIFO_LIB/subil_powerbasecon_ESD/layout.
+INFO (XSTRM-220): 119. Translating STRUCTURE subil_powermetalring_ESD1 as cellView FIFO_LIB/subil_powermetalring_ESD1/layout.
+INFO (XSTRM-220): 120. Translating STRUCTURE subil_pdiodepower as cellView FIFO_LIB/subil_pdiodepower/layout.
+INFO (XSTRM-220): 121. Translating STRUCTURE subil_m_via_546 as cellView FIFO_LIB/subil_m_via_546/layout.
+INFO (XSTRM-220): 122. Translating STRUCTURE subil_m_via2_545 as cellView FIFO_LIB/subil_m_via2_545/layout.
+INFO (XSTRM-220): 123. Translating STRUCTURE cnwnmos_thn2t$$44657708 as cellView FIFO_LIB/cnwnmos_thn2t$$44657708/layout.
+INFO (XSTRM-220): 124. Translating STRUCTURE subil_pcappower as cellView FIFO_LIB/subil_pcappower/layout.
+INFO (XSTRM-220): 125. Translating STRUCTURE subil_powerbase_1 as cellView FIFO_LIB/subil_powerbase_1/layout.
+INFO (XSTRM-220): 126. Translating STRUCTURE subil_powerbase_ESD1 as cellView FIFO_LIB/subil_powerbase_ESD1/layout.
+INFO (XSTRM-220): 127. Translating STRUCTURE subil_pvdicon_ESD as cellView FIFO_LIB/subil_pvdicon_ESD/layout.
+INFO (XSTRM-220): 128. Translating STRUCTURE pvdi as cellView FIFO_LIB/pvdi/layout.
+INFO (XSTRM-220): 129. Translating STRUCTURE subil_pngatebuff_ESD22 as cellView FIFO_LIB/subil_pngatebuff_ESD22/layout.
+INFO (XSTRM-220): 130. Translating STRUCTURE subil_pngate2buff_ESD22 as cellView FIFO_LIB/subil_pngate2buff_ESD22/layout.
+INFO (XSTRM-220): 131. Translating STRUCTURE subil_pngatering_ESD22 as cellView FIFO_LIB/subil_pngatering_ESD22/layout.
+INFO (XSTRM-220): 132. Translating STRUCTURE subil_pnbuff_ESD22 as cellView FIFO_LIB/subil_pnbuff_ESD22/layout.
+INFO (XSTRM-220): 133. Translating STRUCTURE subil_powermetalring_ESD2 as cellView FIFO_LIB/subil_powermetalring_ESD2/layout.
+INFO (XSTRM-220): 134. Translating STRUCTURE subil_powerbase_ESD2 as cellView FIFO_LIB/subil_powerbase_ESD2/layout.
+INFO (XSTRM-220): 135. Translating STRUCTURE subil_powerbaseconvsso_ESD1 as cellView FIFO_LIB/subil_powerbaseconvsso_ESD1/layout.
+INFO (XSTRM-220): 136. Translating STRUCTURE subil_4via_ESD as cellView FIFO_LIB/subil_4via_ESD/layout.
+INFO (XSTRM-220): 137. Translating STRUCTURE subil_pv0icon_ESD as cellView FIFO_LIB/subil_pv0icon_ESD/layout.
+INFO (XSTRM-220): 138. Translating STRUCTURE pv0i as cellView FIFO_LIB/pv0i/layout.
+INFO (XSTRM-220): 139. Translating STRUCTURE subil_pvblockcell as cellView FIFO_LIB/subil_pvblockcell/layout.
+INFO (XSTRM-220): 140. Translating STRUCTURE subil_pngatebuff_ESD1 as cellView FIFO_LIB/subil_pngatebuff_ESD1/layout.
+INFO (XSTRM-220): 141. Translating STRUCTURE subil_pngate2buff_ESD1 as cellView FIFO_LIB/subil_pngate2buff_ESD1/layout.
+INFO (XSTRM-220): 142. Translating STRUCTURE subil_pnbuff_ESD1 as cellView FIFO_LIB/subil_pnbuff_ESD1/layout.
+INFO (XSTRM-220): 143. Translating STRUCTURE subil_ppgatebotringpower as cellView FIFO_LIB/subil_ppgatebotringpower/layout.
+INFO (XSTRM-220): 144. Translating STRUCTURE subil_ppgatebuffpower as cellView FIFO_LIB/subil_ppgatebuffpower/layout.
+INFO (XSTRM-220): 145. Translating STRUCTURE subil_ppgate2buffpower as cellView FIFO_LIB/subil_ppgate2buffpower/layout.
+INFO (XSTRM-220): 146. Translating STRUCTURE subil_ppgateringpower as cellView FIFO_LIB/subil_ppgateringpower/layout.
+INFO (XSTRM-220): 147. Translating STRUCTURE subil_ppbuffpower as cellView FIFO_LIB/subil_ppbuffpower/layout.
+INFO (XSTRM-220): 148. Translating STRUCTURE subil_pvdacon_ESD as cellView FIFO_LIB/subil_pvdacon_ESD/layout.
+INFO (XSTRM-220): 149. Translating STRUCTURE subil_powerbasevsso as cellView FIFO_LIB/subil_powerbasevsso/layout.
+INFO (XSTRM-220): 150. Translating STRUCTURE subil_powermetalring as cellView FIFO_LIB/subil_powermetalring/layout.
+INFO (XSTRM-220): 151. Translating STRUCTURE pvda as cellView FIFO_LIB/pvda/layout.
+INFO (XSTRM-220): 152. Translating STRUCTURE subil_pngatebuff_ESD as cellView FIFO_LIB/subil_pngatebuff_ESD/layout.
+INFO (XSTRM-220): 153. Translating STRUCTURE subil_pngate2buff_ESD as cellView FIFO_LIB/subil_pngate2buff_ESD/layout.
+INFO (XSTRM-220): 154. Translating STRUCTURE subil_pnbuff_ESD as cellView FIFO_LIB/subil_pnbuff_ESD/layout.
+INFO (XSTRM-220): 155. Translating STRUCTURE subil_powerbasevsso_ESD as cellView FIFO_LIB/subil_powerbasevsso_ESD/layout.
+INFO (XSTRM-220): 156. Translating STRUCTURE subil_powermetalring_ESD as cellView FIFO_LIB/subil_powermetalring_ESD/layout.
+INFO (XSTRM-220): 157. Translating STRUCTURE subil_powerbaseconvsso_ESD as cellView FIFO_LIB/subil_powerbaseconvsso_ESD/layout.
+INFO (XSTRM-220): 158. Translating STRUCTURE subil_pv0acon_ESD as cellView FIFO_LIB/subil_pv0acon_ESD/layout.
+INFO (XSTRM-220): 159. Translating STRUCTURE pv0a as cellView FIFO_LIB/pv0a/layout.
+INFO (XSTRM-220): 160. Translating STRUCTURE pfeed10000 as cellView FIFO_LIB/pfeed10000/layout.
+INFO (XSTRM-220): 161. Translating STRUCTURE feedth9 as cellView FIFO_LIB/feedth9/layout.
+INFO (XSTRM-220): 162. Translating STRUCTURE feedth3 as cellView FIFO_LIB/feedth3/layout.
+INFO (XSTRM-220): 163. Translating STRUCTURE feedth as cellView FIFO_LIB/feedth/layout.
+INFO (XSTRM-220): 164. Translating STRUCTURE fifo_mem as cellView FIFO_LIB/fifo_mem/layout.
+
+Summary of Objects Translated:
+	Instances:                              123646
+	CustomVias:                             0
+	StandardVias:                           3978
+	CdsGenVias:                             0
+	Arrays:                                 0
+	Polygons:                               1058
+	Paths:                                  5702
+	PathSegs:                               0
+	Rectangles:                             14006
+	Text:                                   1407
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  164
+
+Elapsed Time: 0.9s   User Time: 0.4s   CPU Time: 0.1s   Peak VM: 84212KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

@@ -1,0 +1,79 @@
+                          CONFORMAL (R)
+                   Version 17.20-s300 (10-Feb-2018) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2018. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 2138 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read library /home/vlsi1/23EC4224/project/fifo/equivalance_check/tsl18fs120_scl_ff.v -verilog -both
+// Parsing file /home/vlsi1/23EC4224/project/fifo/equivalance_check/tsl18fs120_scl_ff.v ...
+// Warning: (RTL14) Signal has input but it has no output (occurrence:30)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:48)
+// Warning: (VLG5.5) Internal primitive is recognized (occurrence:120)
+// Warning: (VLG5.6) Named port association is ignored for primitive gate (occurrence:120)
+// Warning: (IGN4) Attribute instance(s) are ignored (occurrence:1)
+// Warning: (IGN7.1) trireg net is modeled as a latch to hold value (occurrence:1)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:2)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:73)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:2)
+// Note: Read VERILOG library successfully
+// Command: read design /home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v -verilog -golden
+// Parsing file /home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v ...
+// Golden root module is set to 'fifo_mem'
+// Warning: (RTL1.5a) Assignment with RHS bit width is greater than LHS bit width (occurrence:2)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:3)
+// Warning: (RTL7.8) Overflowed integer is truncated (occurrence:4)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:3)
+// Warning: (HRC3.8) Port positional association occurs in an instantiation (occurrence:4)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:2)
+// Note: Read VERILOG design successfully
+// Command: read design /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_netlist.v -verilog -revised
+// Parsing file /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_netlist.v ...
+// Revised root module is set to 'fifo_mem'
+// Note: Read VERILOG design successfully
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            12     13     140       165     
+--------------------------------------------------------------------------------
+Revised           12     13     140       165     
+================================================================================
+// Command: add compare point -all
+// 153 compared points added to compare list
+// Command: compare 
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           13     140       153     
+================================================================================
+// Command: report verification
+================================================================================
+                            Verification Report
+--------------------------------------------------------------------------------
+Category                                                                  Count
+--------------------------------------------------------------------------------
+1. Non-standard modeling options used:                                      0
+--------------------------------------------------------------------------------
+2. Incomplete verification:                                                 0
+--------------------------------------------------------------------------------
+3. User modification to design:                                             0
+--------------------------------------------------------------------------------
+4. Conformal Constraint Designer clock domain crossing checks recommended:  0
+--------------------------------------------------------------------------------
+5. Design ambiguity:                                                        0
+--------------------------------------------------------------------------------
+6. Compare Results:                                                        PASS
+================================================================================
+// Command: exit

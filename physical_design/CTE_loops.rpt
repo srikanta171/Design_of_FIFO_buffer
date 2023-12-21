@@ -1,0 +1,228 @@
+--> WARNING: A timing loop was found in the design. The arc from 'Fwr/CIN' to 
+             'Fwr/PAD' has been cut . A description of the timing loop follows 
+             <TA-112>.
+     +------------------+ 
+     |   Pin   |  Cell  | 
+     |---------+--------| 
+     | Fwr/CIN | pc3d01 | 
+     | Fwr/PAD | pc3d01 | 
+     | Fwr/CIN | pc3d01 | 
+     +------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'Ffifo_full/
+             CIN' to 'Ffifo_full/PAD' has been cut . A description of the 
+             timing loop follows <TA-112>.
+     +-------------------------+ 
+     |      Pin       |  Cell  | 
+     |----------------+--------| 
+     | Ffifo_full/CIN | pc3d01 | 
+     | Ffifo_full/PAD | pc3d01 | 
+     | Ffifo_full/CIN | pc3d01 | 
+     +-------------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'Frd/CIN' to 
+             'Frd/PAD' has been cut . A description of the timing loop follows 
+             <TA-112>.
+     +------------------+ 
+     |   Pin   |  Cell  | 
+     |---------+--------| 
+     | Frd/CIN | pc3d01 | 
+     | Frd/PAD | pc3d01 | 
+     | Frd/CIN | pc3d01 | 
+     +------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'Ffifo_empty/
+             CIN' to 'Ffifo_empty/PAD' has been cut . A description of the 
+             timing loop follows <TA-112>.
+     +--------------------------+ 
+     |       Pin       |  Cell  | 
+     |-----------------+--------| 
+     | Ffifo_empty/CIN | pc3d01 | 
+     | Ffifo_empty/PAD | pc3d01 | 
+     | Ffifo_empty/CIN | pc3d01 | 
+     +--------------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn3/CIN' 
+             to 'dataIn3/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn3/CIN | pc3d01 | 
+     | dataIn3/PAD | pc3d01 | 
+     | dataIn3/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn0/CIN' 
+             to 'dataIn0/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn0/CIN | pc3d01 | 
+     | dataIn0/PAD | pc3d01 | 
+     | dataIn0/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn1/CIN' 
+             to 'dataIn1/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn1/CIN | pc3d01 | 
+     | dataIn1/PAD | pc3d01 | 
+     | dataIn1/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn4/CIN' 
+             to 'dataIn4/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn4/CIN | pc3d01 | 
+     | dataIn4/PAD | pc3d01 | 
+     | dataIn4/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn7/CIN' 
+             to 'dataIn7/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn7/CIN | pc3d01 | 
+     | dataIn7/PAD | pc3d01 | 
+     | dataIn7/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn6/CIN' 
+             to 'dataIn6/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn6/CIN | pc3d01 | 
+     | dataIn6/PAD | pc3d01 | 
+     | dataIn6/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn5/CIN' 
+             to 'dataIn5/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn5/CIN | pc3d01 | 
+     | dataIn5/PAD | pc3d01 | 
+     | dataIn5/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataIn2/CIN' 
+             to 'dataIn2/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +----------------------+ 
+     |     Pin     |  Cell  | 
+     |-------------+--------| 
+     | dataIn2/CIN | pc3d01 | 
+     | dataIn2/PAD | pc3d01 | 
+     | dataIn2/CIN | pc3d01 | 
+     +----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'Frst_n/CIN' 
+             to 'Frst_n/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +---------------------+ 
+     |    Pin     |  Cell  | 
+     |------------+--------| 
+     | Frst_n/CIN | pc3d01 | 
+     | Frst_n/PAD | pc3d01 | 
+     | Frst_n/CIN | pc3d01 | 
+     +---------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut7/CIN' 
+             to 'dataOut7/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut7/PAD | pc3d01 | 
+     | dataOut7/CIN | pc3d01 | 
+     | dataOut7/PAD | pc3d01 | 
+     +-----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut6/CIN' 
+             to 'dataOut6/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut6/PAD | pc3d01 | 
+     | dataOut6/CIN | pc3d01 | 
+     | dataOut6/PAD | pc3d01 | 
+     +-----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut5/CIN' 
+             to 'dataOut5/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut5/PAD | pc3d01 | 
+     | dataOut5/CIN | pc3d01 | 
+     | dataOut5/PAD | pc3d01 | 
+     +-----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut4/CIN' 
+             to 'dataOut4/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut4/PAD | pc3d01 | 
+     | dataOut4/CIN | pc3d01 | 
+     | dataOut4/PAD | pc3d01 | 
+     +-----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut3/CIN' 
+             to 'dataOut3/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut3/PAD | pc3d01 | 
+     | dataOut3/CIN | pc3d01 | 
+     | dataOut3/PAD | pc3d01 | 
+     +-----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut2/CIN' 
+             to 'dataOut2/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut2/PAD | pc3d01 | 
+     | dataOut2/CIN | pc3d01 | 
+     | dataOut2/PAD | pc3d01 | 
+     +-----------------------+ 
+--> WARNING: A timing loop was found in the design. The arc from 'dataOut1/CIN' 
+             to 'dataOut1/PAD' has been cut . A description of the timing loop 
+             follows <TA-112>.
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut1/PAD | pc3d01 | 
+     | dataOut1/CIN | pc3d01 | 
+     | dataOut1/PAD | pc3d01 | 
+     +-----------------------+ 
+     +-----------------------+ 
+     |     Pin      |  Cell  | 
+     |--------------+--------| 
+     | dataOut0/PAD | pc3d01 | 
+     | dataOut0/CIN | pc3d01 | 
+     | dataOut0/PAD | pc3d01 | 
+     +-----------------------+ 
+     +------------------------------+ 
+     |         Pin         |  Cell  | 
+     |---------------------+--------| 
+     | Ffifo_threshold/PAD | pc3d01 | 
+     | Ffifo_threshold/CIN | pc3d01 | 
+     | Ffifo_threshold/PAD | pc3d01 | 
+     +------------------------------+ 
+     +-----------------------------+ 
+     |        Pin         |  Cell  | 
+     |--------------------+--------| 
+     | Ffifo_overflow/PAD | pc3d01 | 
+     | Ffifo_overflow/CIN | pc3d01 | 
+     | Ffifo_overflow/PAD | pc3d01 | 
+     +-----------------------------+ 
+     +------------------------------+ 
+     |         Pin         |  Cell  | 
+     |---------------------+--------| 
+     | Ffifo_underflow/PAD | pc3d01 | 
+     | Ffifo_underflow/CIN | pc3d01 | 
+     | Ffifo_underflow/PAD | pc3d01 | 
+     +------------------------------+ 

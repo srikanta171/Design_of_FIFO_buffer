@@ -1,0 +1,10 @@
+# File Created by vlsi1 at Wed Dec 20 11:39:08 2023
+# assisted by CdsLibEditor
+SOFTINCLUDE /cad/install/IC617/share/cdssetup/dfII/cds.lib
+SOFTINCLUDE /cad/install/IC617/share/cdssetup/hdl/cds.lib
+SOFTINCLUDE /cad/install/IC617/share/cdssetup/pic/cds.lib
+SOFTINCLUDE /cad/install/IC617/share/cdssetup/sg/cds.lib
+SOFTINCLUDE $FOUNDRY/cds.lib
+DEFINE ts018_scl_prim /home/vlsi1/Downloads/scl_pdk/design_kit/pdklib/cadence/OA/ts018_compana_4M1L_OA/rev0.0/ref_libs/ts018_scl_prim
+DEFINE fifo_lib /home/vlsi1/23EC4224/project/fifo/fifo_virtuoso/fifo_lib
+DEFINE FIFO_LIB /home/vlsi1/23EC4224/project/fifo/fifo_virtuoso/FIFO_LIB

@@ -1,0 +1,887 @@
+[12/20 11:49:32      0s] 
+[12/20 11:49:32      0s] Cadence Innovus(TM) Implementation System.
+[12/20 11:49:32      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/20 11:49:32      0s] 
+[12/20 11:49:32      0s] Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+[12/20 11:49:32      0s] Options:	
+[12/20 11:49:32      0s] Date:		Wed Dec 20 11:49:32 2023
+[12/20 11:49:32      0s] Host:		cadence1 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Xeon(R) W-1250P CPU @ 4.10GHz 12288KB)
+[12/20 11:49:32      0s] OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+[12/20 11:49:32      0s] 
+[12/20 11:49:32      0s] License:
+[12/20 11:49:33      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[12/20 11:49:33      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/20 11:49:39      6s] @(#)CDS: Innovus v17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+[12/20 11:49:39      6s] @(#)CDS: NanoRoute 17.12-s095_1 NR171102-1913/17_12-UB (database version 2.30, 405.7.1) {superthreading v1.44}
+[12/20 11:49:39      6s] @(#)CDS: AAE 17.12-s040 (64bit) 11/09/2017 (Linux 2.6.18-194.el5)
+[12/20 11:49:39      6s] @(#)CDS: CTE 17.12-s036_1 () Nov  2 2017 09:33:40 ( )
+[12/20 11:49:39      6s] @(#)CDS: SYNTECH 17.12-s012_1 () Oct 31 2017 04:30:11 ( )
+[12/20 11:49:39      6s] @(#)CDS: CPE v17.12-s076
+[12/20 11:49:39      6s] @(#)CDS: IQRC/TQRC 16.1.1-s220 (64bit) Fri Aug  4 09:53:48 PDT 2017 (Linux 2.6.18-194.el5)
+[12/20 11:49:39      6s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[12/20 11:49:39      6s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[12/20 11:49:39      6s] @(#)CDS: RCDB 11.10
+[12/20 11:49:39      6s] --- Running on cadence1 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (6cores*12cpus*Intel(R) Xeon(R) W-1250P CPU @ 4.10GHz 12288KB) ---
+[12/20 11:49:39      6s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_13706_cadence1_vlsi1_B3cj5j.
+
+[12/20 11:49:39      6s] Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+[12/20 11:49:39      6s] 
+[12/20 11:49:39      6s] **INFO:  MMMC transition support version v31-84 
+[12/20 11:49:39      6s] 
+[12/20 11:49:39      6s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/20 11:49:39      6s] <CMD> suppressMessage ENCEXT-2799
+[12/20 11:49:39      6s] <CMD> getVersion
+[12/20 11:49:39      6s] <CMD> getVersion
+[12/20 11:49:39      6s] [INFO] Loading PVS 16.12-s208 fill procedures
+[12/20 11:49:39      6s] <CMD> getDrawView
+[12/20 11:49:39      6s] <CMD> loadWorkspace -name Physical
+[12/20 11:49:39      6s] <CMD> win
+[12/20 11:49:48      7s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[12/20 11:49:48      7s] <CMD> set defHierChar /
+[12/20 11:49:48      7s] <CMD> set distributed_client_message_echo 1
+[12/20 11:49:48      7s] <CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+[12/20 11:49:48      7s] <CMD> set eco_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[12/20 11:49:48      7s] <CMD> set enc_enable_print_mode_command_reset_options 1
+[12/20 11:49:48      7s] <CMD> set init_gnd_net {VSS VSSO}
+[12/20 11:49:48      7s] <CMD> set init_io_file fifo_iopad.io
+[12/20 11:49:48      7s] <CMD> set init_lef_file {../../../../Downloads/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ../../../../Downloads/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ../../../../Downloads/scl_pdk/iolib/cio150/cds/lef/tsl18cio150_4lm.lef}
+[12/20 11:49:48      7s] <CMD> set init_mmmc_file viewDefinition.tcl
+[12/20 11:49:48      7s] <CMD> set init_oa_search_lib {}
+[12/20 11:49:48      7s] <CMD> set init_pwr_net {VDD VDDO}
+[12/20 11:49:48      7s] <CMD> set init_verilog ../synthesis/fifo_netlist.v
+[12/20 11:49:48      7s] <CMD> set latch_time_borrow_mode max_borrow
+[12/20 11:49:48      7s] <CMD> set pegDefaultResScaleFactor 1
+[12/20 11:49:48      7s] <CMD> set pegDetailResScaleFactor 1
+[12/20 11:49:48      7s] <CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+[12/20 11:49:48      7s] <CMD> set soft_stack_size_limit 127
+[12/20 11:49:48      7s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[12/20 11:49:51      7s] <CMD> init_design
+[12/20 11:49:51      7s] #% Begin Load MMMC data ... (date=12/20 11:49:51, mem=471.2M)
+[12/20 11:49:51      7s] #% End Load MMMC data ... (date=12/20 11:49:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=471.2M, current mem=467.1M)
+[12/20 11:49:51      7s] 
+[12/20 11:49:51      7s] Loading LEF file ../../../../Downloads/scl_pdk/stdlib/fs120/tech_data/lef/tsl180l4.lef ...
+[12/20 11:49:51      7s] 
+[12/20 11:49:51      7s] Loading LEF file ../../../../Downloads/scl_pdk/stdlib/fs120/lef/tsl18fs120_scl.lef ...
+[12/20 11:49:51      7s] Set DBUPerIGU to M2 pitch 560.
+[12/20 11:49:51      7s] 
+[12/20 11:49:51      7s] Loading LEF file ../../../../Downloads/scl_pdk/iolib/cio150/cds/lef/tsl18cio150_4lm.lef ...
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/20 11:49:51      7s] Type 'man IMPLF-200' for more detail.
+[12/20 11:49:51      7s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[12/20 11:49:51      7s] To increase the message display limit, refer to the product command reference manual.
+[12/20 11:49:51      7s] 
+[12/20 11:49:51      7s] viaInitial starts at Wed Dec 20 11:49:51 2023
+viaInitial ends at Wed Dec 20 11:49:51 2023
+Loading view definition file from viewDefinition.tcl
+[12/20 11:49:51      7s] Reading my_max_library_set timing library '/home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+[12/20 11:49:51      8s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/20 11:49:51      8s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'I' of cell 'bh01d1' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/20 11:49:51      8s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib)
+[12/20 11:49:51      8s] Read 534 cells in library 'tsl18fs120_scl_ss' 
+[12/20 11:49:51      8s] Reading my_max_library_set timing library '/home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib' ...
+[12/20 11:49:51      8s] **ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1171)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1185)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1408)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1422)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1644)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1658)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1880)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 1894)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2117)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2131)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2354)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2368)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2590)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2604)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2827)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 2841)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3071)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3085)
+**ERROR: (TECHLIB-1318):	All the table values in the 'rise_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3308)
+**ERROR: (TECHLIB-1318):	All the table values in the 'fall_transition' group are within '0.000010' of each other. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib, Line 3322)
+Message <TECHLIB-1318> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x11' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x12' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'XOUT' of cell 'pc3x13' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PAD' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'PADR' of cell 'pc3d00' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSSO' of cell 'apv0a' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVSS' of cell 'apv0i' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDDO' of cell 'apvda' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'AVDD' of cell 'apvdi' is not defined in the library. (File /home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_max.lib)
+[12/20 11:49:51      8s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[12/20 11:49:51      8s] Read 93 cells in library 'tsl18cio250_max' 
+[12/20 11:49:51      8s] Reading my_min_library_set timing library '/home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+[12/20 11:49:51      8s] Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/20 11:49:51      8s] Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/20 11:49:52      8s] Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib)
+[12/20 11:49:52      8s] Read 534 cells in library 'tsl18fs120_scl_ff' 
+[12/20 11:49:52      8s] Reading my_min_library_set timing library '/home/vlsi1/Downloads/scl_pdk/iolib/cio250/synopsys/2002.05/models/tsl18cio250_min.lib' ...
+[12/20 11:49:52      8s] Read 93 cells in library 'tsl18cio250_min' 
+[12/20 11:49:52      8s] *** End library_loading (cpu=0.01min, real=0.02min, mem=26.3M, fe_cpu=0.15min, fe_real=0.33min, fe_mem=552.4M) ***
+[12/20 11:49:52      8s] #% Begin Load netlist data ... (date=12/20 11:49:52, mem=550.1M)
+[12/20 11:49:52      8s] *** Begin netlist parsing (mem=552.4M) ***
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+[12/20 11:49:52      8s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[12/20 11:49:52      8s] To increase the message display limit, refer to the product command reference manual.
+[12/20 11:49:52      8s] Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/20 11:49:52      8s] Created 627 new cells from 4 timing libraries.
+[12/20 11:49:52      8s] Reading netlist ...
+[12/20 11:49:52      8s] Backslashed names will retain backslash and a trailing blank character.
+[12/20 11:49:52      8s] Reading verilog netlist '../synthesis/fifo_netlist.v'
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'DFFRX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'SDFFRHQX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'OAI21XL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'SDFFHQX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'INVX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'JKFFRXL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NOR2X1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'OR2X2' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'AOI21XL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'OAI221XL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'DFFRHQX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NOR2BX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NAND2BX1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NAND2X1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'AND2X2' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'INVXL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NOR2BXL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NOR2XL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NAND4XL' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPVL-346):	Module 'NAND4X1' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[12/20 11:49:52      8s] Type 'man IMPVL-346' for more detail.
+[12/20 11:49:52      8s] **WARN: (EMS-27):	Message (IMPVL-346) has exceeded the current message display limit of 20.
+[12/20 11:49:52      8s] To increase the message display limit, refer to the product command reference manual.
+[12/20 11:49:52      8s] 
+[12/20 11:49:52      8s] *** Memory Usage v#1 (Current mem = 552.449M, initial mem = 179.895M) ***
+[12/20 11:49:52      8s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=552.4M) ***
+[12/20 11:49:52      8s] #% End Load netlist data ... (date=12/20 11:49:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=550.1M, current mem=500.7M)
+[12/20 11:49:52      8s] Top level cell is fifo_mem.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t02u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t02d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t01u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t01d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3t01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3o03' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3o02' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pt3o01' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t05u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t05d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t05' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t04u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t04d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t04' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t03u' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPTS-282):	Cell 'pc3t03d' is not a level shifter cell but has 'input_signal_level' and 'output_signal_level' specified on pins, or it has different related_power_pin specified on input and output pins. To mark this cell as level shifter, use 'is_level_shifter' attribute.
+[12/20 11:49:52      8s] Type 'man IMPTS-282' for more detail.
+[12/20 11:49:52      8s] **WARN: (EMS-27):	Message (IMPTS-282) has exceeded the current message display limit of 20.
+[12/20 11:49:52      8s] To increase the message display limit, refer to the product command reference manual.
+[12/20 11:49:52      8s] Hooked 1254 DB cells to tlib cells.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'DFFRX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'SDFFHQX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'OAI21XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'SDFFRHQX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AOI21XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'OR2X2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'NOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'JKFFRXL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'INVX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'XNOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AOI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AND2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'NAND2XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'OAI222XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AOI221X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AOI22XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AOI222XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'AOI2BB2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'OAI211XL' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (IMPDB-2504):	Cell 'NAND4X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[12/20 11:49:52      8s] **WARN: (EMS-27):	Message (IMPDB-2504) has exceeded the current message display limit of 20.
+[12/20 11:49:52      8s] To increase the message display limit, refer to the product command reference manual.
+[12/20 11:49:52      8s] Cell 'JKFFRXL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'QN' of cell 'JKFFRXL' as output for net 'n_0' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI21XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'B0' of cell 'AOI21XL' as output for net 'n_95' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'OAI21XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'A1' of cell 'OAI21XL' as output for net 'n_138' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AND2X2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AND2X2' as output for net 'n_149' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'INVX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'INVX1' as output for net 'n_155' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'NAND2BX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND2BX1' as output for net 'n_169' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'NAND2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND2X1' as output for net 'n_170' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'SDFFRHQX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'SE' of cell 'SDFFRHQX1' as output for net 'wptr[4]' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'DFFRX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'QN' of cell 'DFFRX1' as output for net 'wptr[3]' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'DFFRHQX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'DFFRHQX1' as output for net 'wptr[0]' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'SDFFHQX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'SDFFHQX1' as output for net '\top3_data_out2[15] [7]' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'JKFFRXL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'JKFFRXL' as output for net 'rptr[4]' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'DFFRX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'DFFRX1' as output for net 'n_5' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'NOR2XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NOR2XL' as output for net 'n_10' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'NAND2XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND2XL' as output for net 'n_11' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI221X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'C0' of cell 'AOI221X1' as output for net 'n_12' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'OAI222XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI222XL' as output for net 'n_18' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI221X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI221X1' as output for net 'n_21' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI22XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI22XL' as output for net 'n_22' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'NOR2BXL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NOR2BXL' as output for net 'n_24' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AND2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AND2X1' as output for net 'n_68' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI222XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI222XL' as output for net 'n_80' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI22X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI22X1' as output for net 'n_100' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'OAI21XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI21XL' as output for net 'n_101' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI21XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI21XL' as output for net 'n_105' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'AOI2BB2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI2BB2X1' as output for net 'n_114' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'NAND4X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND4X1' as output for net 'n_121' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'XNOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'XNOR2X1' as output for net 'n_122' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'JKFFRXL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'K' of cell 'JKFFRXL' as output for net 'n_136' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'OAI221XL' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI221XL' as output for net 'n_142' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'DFFRHQX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'D' of cell 'DFFRHQX1' as output for net 'n_143' in module 'fifo_mem'.
+[12/20 11:49:52      8s] Cell 'OR2X2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OR2X2' as output for net 'n_177' in module 'fifo_mem'.
+[12/20 11:49:52      8s] 30 empty module found.
+[12/20 11:49:52      8s] Starting recursive module instantiation check.
+[12/20 11:49:52      8s] No recursion found.
+[12/20 11:49:52      8s] Term dir updated for 0 vinsts of 30 cells.
+[12/20 11:49:52      8s] Building hierarchical netlist for Cell fifo_mem ...
+[12/20 11:49:52      8s] *** Netlist is unique.
+[12/20 11:49:52      8s] ** info: there are 1315 modules.
+[12/20 11:49:52      8s] ** info: there are 0 stdCell insts.
+[12/20 11:49:52      8s] ** info: there are 25 Pad insts.
+[12/20 11:49:52      8s] 
+[12/20 11:49:52      8s] *** Memory Usage v#1 (Current mem = 579.121M, initial mem = 179.895M) ***
+[12/20 11:49:52      8s] Reading IO assignment file "fifo_iopad.io" ...
+[12/20 11:49:52      8s] Adjusting Core to Left to: 0.3200. Core to Bottom to: 0.3200.
+[12/20 11:49:52      8s] **WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/20 11:49:52      8s] Type 'man IMPFP-3961' for more detail.
+[12/20 11:49:52      8s] **WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[12/20 11:49:52      8s] Type 'man IMPFP-3961' for more detail.
+[12/20 11:49:52      8s] Horizontal Layer M1 offset = 0 (derived)
+[12/20 11:49:52      8s] Vertical Layer M2 offset = 280 (derived)
+[12/20 11:49:52      8s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/20 11:49:52      8s] Set Default Net Delay as 1000 ps.
+[12/20 11:49:52      8s] Set Default Net Load as 0.5 pF. 
+[12/20 11:49:52      8s] Set Default Input Pin Transition as 0.1 ps.
+[12/20 11:49:52      9s] Extraction setup Delayed 
+[12/20 11:49:52      9s] *Info: initialize multi-corner CTS.
+[12/20 11:49:52      9s] Reading timing constraints file '/home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc' ...
+[12/20 11:49:52      9s] Current (total cpu=0:00:09.1, real=0:00:20.0, peak res=645.6M, current mem=645.6M)
+[12/20 11:49:52      9s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/RF1R1WX2' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 18).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/RF1R1WX2' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 18).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 18).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/RF2R1WX2' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 19).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/RF2R1WX2' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 19).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 19).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/RFRDX1' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 20).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/RFRDX1' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 20).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 20).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/RFRDX2' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 21).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/RFRDX2' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 21).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 21).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/RFRDX4' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 22).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/RFRDX4' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 22).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 22).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/TIEHI' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 23).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/TIEHI' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 23).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 23).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tsmc18/TIELO' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 24).
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] **ERROR: (TCLCMD-917):	Cannot find 'library cells' that match 'tsmc18/TIELO' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 24).
+
+**ERROR: (TCLCMD-917):	Cannot find 'modules, or cells' that match '' (File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc, Line 24).
+
+INFO (CTE): Reading of timing constraints file /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc completed, with 7 Warnings and 14 Errors.
+[12/20 11:49:52      9s] WARNING (CTE-25): Line: 9, 10 of File /home/vlsi1/23EC4224/project/fifo/synthesis/fifo_sdc.sdc : Skipped unsupported command: set_units
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=653.0M, current mem=653.0M)
+[12/20 11:49:52      9s] Current (total cpu=0:00:09.1, real=0:00:20.0, peak res=653.0M, current mem=653.0M)
+[12/20 11:49:52      9s] Creating Cell Server ...(0, 1, 1, 1)
+[12/20 11:49:52      9s] Summary for sequential cells identification: 
+[12/20 11:49:52      9s]   Identified SBFF number: 114
+[12/20 11:49:52      9s]   Identified MBFF number: 0
+[12/20 11:49:52      9s]   Identified SB Latch number: 0
+[12/20 11:49:52      9s]   Identified MB Latch number: 0
+[12/20 11:49:52      9s]   Not identified SBFF number: 6
+[12/20 11:49:52      9s]   Not identified MBFF number: 0
+[12/20 11:49:52      9s]   Not identified SB Latch number: 0
+[12/20 11:49:52      9s]   Not identified MB Latch number: 0
+[12/20 11:49:52      9s]   Number of sequential cells which are not FFs: 83
+[12/20 11:49:52      9s] Total number of combinational cells: 321
+[12/20 11:49:52      9s] Total number of sequential cells: 203
+[12/20 11:49:52      9s] Total number of tristate cells: 10
+[12/20 11:49:52      9s] Total number of level shifter cells: 0
+[12/20 11:49:52      9s] Total number of power gating cells: 0
+[12/20 11:49:52      9s] Total number of isolation cells: 0
+[12/20 11:49:52      9s] Total number of power switch cells: 0
+[12/20 11:49:52      9s] Total number of pulse generator cells: 0
+[12/20 11:49:52      9s] Total number of always on buffers: 0
+[12/20 11:49:52      9s] Total number of retention cells: 0
+[12/20 11:49:52      9s] List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+[12/20 11:49:52      9s] Total number of usable buffers: 13
+[12/20 11:49:52      9s] List of unusable buffers:
+[12/20 11:49:52      9s] Total number of unusable buffers: 0
+[12/20 11:49:52      9s] List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+[12/20 11:49:52      9s] Total number of usable inverters: 12
+[12/20 11:49:52      9s] List of unusable inverters:
+[12/20 11:49:52      9s] Total number of unusable inverters: 0
+[12/20 11:49:52      9s] List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+[12/20 11:49:52      9s] Total number of identified usable delay cells: 13
+[12/20 11:49:52      9s] List of identified unusable delay cells:
+[12/20 11:49:52      9s] Total number of identified unusable delay cells: 0
+[12/20 11:49:52      9s] Creating Cell Server, finished. 
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] Deleting Cell Server ...
+[12/20 11:49:52      9s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[12/20 11:49:52      9s] Extraction setup Started 
+[12/20 11:49:52      9s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[12/20 11:49:52      9s] Type 'man IMPEXT-2773' for more detail.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/20 11:49:52      9s] Type 'man IMPEXT-2776' for more detail.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/20 11:49:52      9s] Type 'man IMPEXT-2776' for more detail.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 2.5 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+[12/20 11:49:52      9s] Type 'man IMPEXT-2776' for more detail.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/20 11:49:52      9s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.04 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[12/20 11:49:52      9s] Summary of Active RC-Corners : 
+[12/20 11:49:52      9s]  
+[12/20 11:49:52      9s]  Analysis View: my_analysis_view_setup
+[12/20 11:49:52      9s]     RC-Corner Name        : my_rc_corner_worst
+[12/20 11:49:52      9s]     RC-Corner Index       : 0
+[12/20 11:49:52      9s]     RC-Corner Temperature : 25 Celsius
+[12/20 11:49:52      9s]     RC-Corner Cap Table   : ''
+[12/20 11:49:52      9s]     RC-Corner PreRoute Res Factor         : 1
+[12/20 11:49:52      9s]     RC-Corner PreRoute Cap Factor         : 1
+[12/20 11:49:52      9s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/20 11:49:52      9s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/20 11:49:52      9s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/20 11:49:52      9s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/20 11:49:52      9s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/20 11:49:52      9s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/20 11:49:52      9s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/20 11:49:52      9s]  
+[12/20 11:49:52      9s]  Analysis View: my_analysis_view_hold
+[12/20 11:49:52      9s]     RC-Corner Name        : my_rc_corner_worst
+[12/20 11:49:52      9s]     RC-Corner Index       : 0
+[12/20 11:49:52      9s]     RC-Corner Temperature : 25 Celsius
+[12/20 11:49:52      9s]     RC-Corner Cap Table   : ''
+[12/20 11:49:52      9s]     RC-Corner PreRoute Res Factor         : 1
+[12/20 11:49:52      9s]     RC-Corner PreRoute Cap Factor         : 1
+[12/20 11:49:52      9s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/20 11:49:52      9s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/20 11:49:52      9s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/20 11:49:52      9s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[12/20 11:49:52      9s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[12/20 11:49:52      9s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/20 11:49:52      9s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/20 11:49:52      9s] 
+[12/20 11:49:52      9s] *** Summary of all messages that are not suppressed in this session:
+[12/20 11:49:52      9s] Severity  ID               Count  Summary                                  
+[12/20 11:49:52      9s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/20 11:49:52      9s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/20 11:49:52      9s] WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+[12/20 11:49:52      9s] WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+[12/20 11:49:52      9s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[12/20 11:49:52      9s] WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+[12/20 11:49:52      9s] WARNING   IMPVL-346           30  Module '%s' is instantiated in the netli...
+[12/20 11:49:52      9s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[12/20 11:49:52      9s] WARNING   IMPDB-2504          30  Cell '%s' is instantiated in the Verilog...
+[12/20 11:49:52      9s] WARNING   TCLCMD-513           7  The software could not find a matching o...
+[12/20 11:49:52      9s] ERROR     TCLCMD-917          14  Cannot find '%s' that match '%s'         
+[12/20 11:49:52      9s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/20 11:49:52      9s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[12/20 11:49:52      9s] *** Message Summary: 1673 warning(s), 34 error(s)
+[12/20 11:49:52      9s] 
+[12/20 11:49:54      9s] <CMD> fit
+[12/20 11:49:56      9s] <CMD> fit
+[12/20 11:50:05     10s] <CMD> getIoFlowFlag
+[12/20 11:50:32     13s] <CMD> setIoFlowFlag 0
+[12/20 11:50:32     13s] <CMD> floorPlan -site CoreSite -d 1200.0 1200.0 20 20 20 20
+[12/20 11:50:32     13s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/20 11:50:32     13s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/20 11:50:32     13s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/20 11:50:32     13s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 20.160000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/20 11:50:32     13s] Horizontal Layer M1 offset = 0 (derived)
+[12/20 11:50:32     13s] Vertical Layer M2 offset = 280 (derived)
+[12/20 11:50:32     13s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/20 11:50:32     13s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/20 11:50:32     14s] <CMD> uiSetTool select
+[12/20 11:50:32     14s] <CMD> getIoFlowFlag
+[12/20 11:50:32     14s] <CMD> fit
+[12/20 11:50:34     14s] <CMD> setIoFlowFlag 0
+[12/20 11:50:34     14s] <CMD> floorPlan -site CoreSite -d 1200.08 1200.08 20.16 20.16 20.16 20.16
+[12/20 11:50:34     14s] Horizontal Layer M1 offset = 0 (derived)
+[12/20 11:50:34     14s] Vertical Layer M2 offset = 280 (derived)
+[12/20 11:50:34     14s] Generated pitch 0.56 in M3 is different from 0.84 defined in technology file in preferred direction.
+[12/20 11:50:34     14s] <CMD> uiSetTool select
+[12/20 11:50:34     14s] <CMD> getIoFlowFlag
+[12/20 11:50:34     14s] <CMD> fit
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingOffset 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingLayers {}
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingOffset 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingLayers {}
+[12/20 11:50:45     15s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingOffset 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeRingLayers {}
+[12/20 11:50:45     15s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/20 11:50:45     15s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/20 11:51:37     21s] <CMD> uiSetTool ruler
+[12/20 11:51:40     21s] <CMD> uiSetTool ruler
+[12/20 11:51:55     23s] <CMD> uiSetTool ruler
+[12/20 11:52:22     27s] <CMD> uiSetTool ruler
+[12/20 11:52:23     27s] <CMD> uiSetTool select
+[12/20 11:52:48     30s] <CMD> uiSetTool select
+[12/20 11:52:50     30s] <CMD> gui_select -rect {506.941 909.195 592.193 840.906}
+[12/20 11:52:52     30s] <CMD> get_visible_nets
+[12/20 11:52:53     31s] <CMD> get_visible_nets
+[12/20 11:53:05     32s] <CMD> setAddRingMode -reset
+[12/20 11:57:08     58s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 11:57:08     58s] The ring targets are set to core/block ring wires.
+[12/20 11:57:08     58s] addRing command will consider rows while creating rings.
+[12/20 11:57:08     58s] addRing command will disallow rings to go over rows.
+[12/20 11:57:08     58s] addRing command will ignore shorts while creating rings.
+[12/20 11:57:08     58s] <CMD> addRing -nets {} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 11:57:08     58s] 
+[12/20 11:57:08     58s] **ERROR: Error: Invalid net names specified. 
+[12/20 11:57:09     58s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 11:57:09     58s] The ring targets are set to core/block ring wires.
+[12/20 11:57:09     58s] addRing command will consider rows while creating rings.
+[12/20 11:57:09     58s] addRing command will disallow rings to go over rows.
+[12/20 11:57:09     58s] addRing command will ignore shorts while creating rings.
+[12/20 11:57:09     58s] <CMD> addRing -nets {} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 11:57:09     58s] 
+[12/20 11:57:09     58s] **ERROR: Error: Invalid net names specified. 
+[12/20 11:57:12     59s] <CMD> fit
+[12/20 11:57:35     61s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 11:57:35     61s] The ring targets are set to core/block ring wires.
+[12/20 11:57:35     61s] addRing command will consider rows while creating rings.
+[12/20 11:57:35     61s] addRing command will disallow rings to go over rows.
+[12/20 11:57:35     61s] addRing command will ignore shorts while creating rings.
+[12/20 11:57:35     61s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M1 bottom M1 left M2 right M2} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 11:57:35     61s] 
+[12/20 11:57:35     61s] Ring generation is complete.
+[12/20 11:57:35     61s] vias are now being generated.
+[12/20 11:57:35     61s] addRing created 8 wires.
+[12/20 11:57:35     61s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/20 11:57:35     61s] +--------+----------------+----------------+
+[12/20 11:57:35     61s] |  Layer |     Created    |     Deleted    |
+[12/20 11:57:35     61s] +--------+----------------+----------------+
+[12/20 11:57:35     61s] |   M1   |        4       |       NA       |
+[12/20 11:57:35     61s] |   V2   |        8       |        0       |
+[12/20 11:57:35     61s] |   M2   |        4       |       NA       |
+[12/20 11:57:35     61s] +--------+----------------+----------------+
+[12/20 11:57:42     62s] <CMD> undo
+[12/20 12:00:25     82s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:00:25     82s] The ring targets are set to core/block ring wires.
+[12/20 12:00:25     82s] addRing command will consider rows while creating rings.
+[12/20 12:00:25     82s] addRing command will disallow rings to go over rows.
+[12/20 12:00:25     82s] addRing command will ignore shorts while creating rings.
+[12/20 12:00:25     82s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 7 bottom 7 left 7 right 7} -spacing {top 0.28 bottom 0.28 left 0.46 right 0.46} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 12:00:25     82s] 
+[12/20 12:00:25     82s] Ring generation is complete.
+[12/20 12:00:25     82s] vias are now being generated.
+[12/20 12:00:25     82s] addRing created 8 wires.
+[12/20 12:00:25     82s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/20 12:00:25     82s] +--------+----------------+----------------+
+[12/20 12:00:25     82s] |  Layer |     Created    |     Deleted    |
+[12/20 12:00:25     82s] +--------+----------------+----------------+
+[12/20 12:00:25     82s] |   M3   |        4       |       NA       |
+[12/20 12:00:25     82s] |  TOP_V |        8       |        0       |
+[12/20 12:00:25     82s] |  TOP_M |        4       |       NA       |
+[12/20 12:00:25     82s] +--------+----------------+----------------+
+[12/20 12:00:39     83s] <CMD> undo
+[12/20 12:00:57     85s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:00:57     85s] The ring targets are set to core/block ring wires.
+[12/20 12:00:57     85s] addRing command will consider rows while creating rings.
+[12/20 12:00:57     85s] addRing command will disallow rings to go over rows.
+[12/20 12:00:57     85s] addRing command will ignore shorts while creating rings.
+[12/20 12:00:57     85s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 7 bottom 7 left 7 right 7} -spacing {top 1 bottom 1 left 1 right 1} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 12:00:57     85s] 
+[12/20 12:00:57     85s] Ring generation is complete.
+[12/20 12:00:57     85s] vias are now being generated.
+[12/20 12:00:57     85s] addRing created 8 wires.
+[12/20 12:00:57     85s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/20 12:00:57     85s] +--------+----------------+----------------+
+[12/20 12:00:57     85s] |  Layer |     Created    |     Deleted    |
+[12/20 12:00:57     85s] +--------+----------------+----------------+
+[12/20 12:00:57     85s] |   M3   |        4       |       NA       |
+[12/20 12:00:57     85s] |  TOP_V |        8       |        0       |
+[12/20 12:00:57     85s] |  TOP_M |        4       |       NA       |
+[12/20 12:00:57     85s] +--------+----------------+----------------+
+[12/20 12:01:13     87s] <CMD> fit
+[12/20 12:01:19     88s] <CMD> fit
+[12/20 12:01:26     89s] <CMD> fit
+[12/20 12:01:56     92s] <CMD> uiSetTool ruler
+[12/20 12:02:51     99s] <CMD> undo
+[12/20 12:03:42    105s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:03:42    105s] The ring targets are set to core/block ring wires.
+[12/20 12:03:42    105s] addRing command will consider rows while creating rings.
+[12/20 12:03:42    105s] addRing command will disallow rings to go over rows.
+[12/20 12:03:42    105s] addRing command will ignore shorts while creating rings.
+[12/20 12:03:42    105s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 9 bottom 9 left 9 right 9} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 2 bottom 2 left 2 right 2} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 12:03:42    105s] 
+[12/20 12:03:42    105s] Ring generation is complete.
+[12/20 12:03:42    105s] vias are now being generated.
+[12/20 12:03:42    105s] addRing created 38 wires.
+[12/20 12:03:42    105s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/20 12:03:42    105s] +--------+----------------+----------------+
+[12/20 12:03:42    105s] |  Layer |     Created    |     Deleted    |
+[12/20 12:03:42    105s] +--------+----------------+----------------+
+[12/20 12:03:42    105s] |   M3   |       18       |       NA       |
+[12/20 12:03:42    105s] |  TOP_V |        8       |        0       |
+[12/20 12:03:42    105s] |  TOP_M |       20       |       NA       |
+[12/20 12:03:42    105s] +--------+----------------+----------------+
+[12/20 12:04:17    109s] <CMD> undo
+[12/20 12:04:19    109s] <CMD> fit
+[12/20 12:04:57    115s] <CMD> fit
+[12/20 12:05:19    118s] <CMD> fit
+[12/20 12:05:26    119s] <CMD> get_visible_nets
+[12/20 12:05:37    120s] <CMD> uiSetTool ruler
+[12/20 12:06:41    129s] <CMD> fit
+[12/20 12:08:30    144s] <CMD> fit
+[12/20 12:08:59    148s] <CMD> fit
+[12/20 12:10:32    159s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:10:32    159s] The ring targets are set to core/block ring wires.
+[12/20 12:10:32    159s] addRing command will consider rows while creating rings.
+[12/20 12:10:32    159s] addRing command will disallow rings to go over rows.
+[12/20 12:10:32    159s] addRing command will ignore shorts while creating rings.
+[12/20 12:10:32    159s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 7.08 bottom 1.08 left 1.08 right 1.08} -spacing {top 4 bottom 4 left 4 right 4} -offset {top 2 bottom 2 left 2 right 2} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 12:10:32    159s] 
+[12/20 12:10:32    159s] Ring generation is complete.
+[12/20 12:10:32    159s] vias are now being generated.
+[12/20 12:10:32    159s] addRing created 8 wires.
+[12/20 12:10:32    159s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/20 12:10:32    159s] +--------+----------------+----------------+
+[12/20 12:10:32    159s] |  Layer |     Created    |     Deleted    |
+[12/20 12:10:32    159s] +--------+----------------+----------------+
+[12/20 12:10:32    159s] |   M3   |        4       |       NA       |
+[12/20 12:10:32    159s] |  TOP_V |        8       |        0       |
+[12/20 12:10:32    159s] |  TOP_M |        4       |       NA       |
+[12/20 12:10:32    159s] +--------+----------------+----------------+
+[12/20 12:10:44    160s] <CMD> undo
+[12/20 12:11:01    162s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:11:01    162s] The ring targets are set to core/block ring wires.
+[12/20 12:11:01    162s] addRing command will consider rows while creating rings.
+[12/20 12:11:01    162s] addRing command will disallow rings to go over rows.
+[12/20 12:11:01    162s] addRing command will ignore shorts while creating rings.
+[12/20 12:11:01    162s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 7.08 bottom 7.08 left 7.08 right 7.08} -spacing {top 4 bottom 4 left 4 right 4} -offset {top 2 bottom 2 left 2 right 2} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 12:11:01    162s] 
+[12/20 12:11:01    162s] Ring generation is complete.
+[12/20 12:11:01    162s] vias are now being generated.
+[12/20 12:11:01    162s] addRing created 8 wires.
+[12/20 12:11:01    162s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[12/20 12:11:01    162s] +--------+----------------+----------------+
+[12/20 12:11:01    162s] |  Layer |     Created    |     Deleted    |
+[12/20 12:11:01    162s] +--------+----------------+----------------+
+[12/20 12:11:01    162s] |   M3   |        4       |       NA       |
+[12/20 12:11:01    162s] |  TOP_V |        8       |        0       |
+[12/20 12:11:01    162s] |  TOP_M |        4       |       NA       |
+[12/20 12:11:01    162s] +--------+----------------+----------------+
+[12/20 12:11:07    163s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:11:07    163s] The ring targets are set to core/block ring wires.
+[12/20 12:11:07    163s] addRing command will consider rows while creating rings.
+[12/20 12:11:07    163s] addRing command will disallow rings to go over rows.
+[12/20 12:11:07    163s] addRing command will ignore shorts while creating rings.
+[12/20 12:11:07    163s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M3 bottom M3 left TOP_M right TOP_M} -width {top 7.08 bottom 7.08 left 7.08 right 7.08} -spacing {top 4 bottom 4 left 4 right 4} -offset {top 2 bottom 2 left 2 right 2} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[12/20 12:11:07    163s] 
+[12/20 12:11:07    163s] Ring generation is complete.
+[12/20 12:11:09    163s] <CMD> fit
+[12/20 12:11:17    164s] <CMD> fit
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingOffset 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingLayers {}
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingOffset 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingLayers {}
+[12/20 12:11:36    167s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingOffset 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingThreshold 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingJogDistance 1.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeRingLayers {}
+[12/20 12:11:36    167s] <CMD> set sprCreateIeStripeWidth 10.0
+[12/20 12:11:36    167s] <CMD> set sprCreateIeStripeThreshold 1.0
+[12/20 12:12:37    173s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+[12/20 12:12:37    173s] addStripe will allow jog to connect padcore ring and block ring.
+[12/20 12:12:37    173s] Stripes will stop at the boundary of the specified area.
+[12/20 12:12:37    173s] When breaking rings, the power planner will consider the existence of blocks.
+[12/20 12:12:37    173s] Stripes will not extend to closest target.
+[12/20 12:12:37    173s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/20 12:12:37    173s] Stripes will not be created over regions without power planning wires.
+[12/20 12:12:37    173s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/20 12:12:37    173s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/20 12:12:37    173s] AddStripe segment minimum length set to 1
+[12/20 12:12:37    173s] Offset for stripe breaking is set to 0.
+[12/20 12:12:37    173s] <CMD> addStripe -nets {VDD VSS} -layer M1 -direction vertical -width pin_width -spacing 1.8 -set_to_set_distance 50 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit TOP_M -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit TOP_M -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:12:37    173s] 
+[12/20 12:12:37    173s] **ERROR: (IMPPP-344):	You can only specify pin_width for stripes over aligned pins.
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+[12/20 12:12:41    174s] addStripe will allow jog to connect padcore ring and block ring.
+[12/20 12:12:41    174s] Stripes will stop at the boundary of the specified area.
+[12/20 12:12:41    174s] When breaking rings, the power planner will consider the existence of blocks.
+[12/20 12:12:41    174s] Stripes will not extend to closest target.
+[12/20 12:12:41    174s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/20 12:12:41    174s] Stripes will not be created over regions without power planning wires.
+[12/20 12:12:41    174s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/20 12:12:41    174s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/20 12:12:41    174s] AddStripe segment minimum length set to 1
+[12/20 12:12:41    174s] Offset for stripe breaking is set to 0.
+[12/20 12:12:41    174s] <CMD> addStripe -nets {VDD VSS} -layer M1 -direction vertical -width pin_width -spacing 1.8 -set_to_set_distance 50 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit TOP_M -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit TOP_M -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:12:41    174s] 
+[12/20 12:12:41    174s] **ERROR: (IMPPP-344):	You can only specify pin_width for stripes over aligned pins.
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer TOP_M -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+[12/20 12:12:52    175s] addStripe will allow jog to connect padcore ring and block ring.
+[12/20 12:12:52    175s] Stripes will stop at the boundary of the specified area.
+[12/20 12:12:52    175s] When breaking rings, the power planner will consider the existence of blocks.
+[12/20 12:12:52    175s] Stripes will not extend to closest target.
+[12/20 12:12:52    175s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[12/20 12:12:52    175s] Stripes will not be created over regions without power planning wires.
+[12/20 12:12:52    175s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[12/20 12:12:52    175s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[12/20 12:12:52    175s] AddStripe segment minimum length set to 1
+[12/20 12:12:52    175s] Offset for stripe breaking is set to 0.
+[12/20 12:12:52    175s] <CMD> addStripe -nets {VDD VSS} -layer TOP_M -direction vertical -width pin_width -spacing 1.8 -set_to_set_distance 50 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit TOP_M -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit TOP_M -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[12/20 12:12:52    175s] 
+[12/20 12:12:52    175s] **ERROR: (IMPPP-344):	You can only specify pin_width for stripes over aligned pins.
+<CMD> sroute -connect {blockPin corePin padPin padRing floatingStripe secondaryPowerPin} -layerChangeRange {M1 TOP_M} -blockPinTarget nearestTarget -padPinPortConnect {allPort oneGeom} -padPinTarget nearestTarget -corePinTarget firstAfterRowEnd -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowjogging 1 -crossoverViaLayerRange {M1 TOP_M} -nets {VDD VSS} -allowLayerChange 1 -blockPin useLef -targetViaLayerRange {M1 TOP_M}
+[12/20 12:13:23    179s] #% Begin sroute (date=12/20 12:13:23, mem=979.5M)
+[12/20 12:13:23    179s] **WARN: (IMPSR-4064):	sroute -connect { secondaryPowerPin } connects level shifter secondary power pins in the special nets. Specify the net name with option -secondaryPinNet. Ignore connecting level shifter secondary power pins for now.
+[12/20 12:13:23    179s] *** Begin SPECIAL ROUTE on Wed Dec 20 12:13:23 2023 ***
+[12/20 12:13:23    179s] SPECIAL ROUTE ran on directory: /home/vlsi1/23EC4224/project/fifo/physical_design
+[12/20 12:13:23    179s] SPECIAL ROUTE ran on machine: cadence1 (Linux 3.10.0-1160.el7.x86_64 Xeon 4.52Ghz)
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s] Begin option processing ...
+[12/20 12:13:23    179s] srouteConnectPowerBump set to false
+[12/20 12:13:23    179s] routeSelectNet set to "VDD VSS"
+[12/20 12:13:23    179s] routeSpecial set to true
+[12/20 12:13:23    179s] srouteBlockPin set to "useLef"
+[12/20 12:13:23    179s] srouteBottomLayerLimit set to 1
+[12/20 12:13:23    179s] srouteBottomTargetLayerLimit set to 1
+[12/20 12:13:23    179s] srouteCrossoverViaBottomLayer set to 1
+[12/20 12:13:23    179s] srouteCrossoverViaTopLayer set to 4
+[12/20 12:13:23    179s] srouteFloatingStripeTarget set to "blockring ring stripe padring ringpin blockpin followpin"
+[12/20 12:13:23    179s] srouteFollowCorePinEnd set to 3
+[12/20 12:13:23    179s] srouteJogControl set to "preferWithChanges differentLayer"
+[12/20 12:13:23    179s] sroutePadPinAllPorts set to true
+[12/20 12:13:23    179s] sroutePreserveExistingRoutes set to true
+[12/20 12:13:23    179s] srouteRoutePowerBarPortOnBothDir set to true
+[12/20 12:13:23    179s] srouteStopBlockPin set to "nearestTarget"
+[12/20 12:13:23    179s] srouteTopLayerLimit set to 4
+[12/20 12:13:23    179s] srouteTopTargetLayerLimit set to 4
+[12/20 12:13:23    179s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1863.00 megs.
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s] Reading DB technology information...
+[12/20 12:13:23    179s] Finished reading DB technology information.
+[12/20 12:13:23    179s] Reading floorplan and netlist information...
+[12/20 12:13:23    179s] Finished reading floorplan and netlist information.
+[12/20 12:13:23    179s] Read in 8 layers, 4 routing layers, 1 overlap layer
+[12/20 12:13:23    179s] Read in 1082 macros, 7 used
+[12/20 12:13:23    179s] Read in 36 components
+[12/20 12:13:23    179s]   32 pad components: 0 unplaced, 0 placed, 32 fixed
+[12/20 12:13:23    179s]   4 other components: 0 unplaced, 0 placed, 4 fixed
+[12/20 12:13:23    179s] Read in 25 logical pins
+[12/20 12:13:23    179s] Read in 25 nets
+[12/20 12:13:23    179s] Read in 4 special nets, 2 routed
+[12/20 12:13:23    179s] 2 nets selected.
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s] Begin power routing ...
+[12/20 12:13:23    179s] **WARN: (IMPSR-559):	Cannot route core pins and converter pins at the same time!
+[12/20 12:13:23    179s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[12/20 12:13:23    179s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[12/20 12:13:23    179s] Type 'man IMPSR-1256' for more detail.
+[12/20 12:13:23    179s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[12/20 12:13:23    179s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[12/20 12:13:23    179s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[12/20 12:13:23    179s] Type 'man IMPSR-1256' for more detail.
+[12/20 12:13:23    179s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[12/20 12:13:23    179s]   Number of IO ports routed: 0
+[12/20 12:13:23    179s]   Number of Block ports routed: 0
+[12/20 12:13:23    179s]   Number of Stripe ports routed: 0
+[12/20 12:13:23    179s]   Number of Pad ports routed: 0
+[12/20 12:13:23    179s]   Number of Power Bump ports routed: 0
+[12/20 12:13:23    179s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1868.00 megs.
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s]  Begin updating DB with routing results ...
+[12/20 12:13:23    179s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[12/20 12:13:23    179s] Pin and blockage extraction finished
+[12/20 12:13:23    179s] 
+[12/20 12:13:23    179s] sroute created 0 wire.
+[12/20 12:13:23    179s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[12/20 12:13:23    179s] #% End sroute (date=12/20 12:13:23, total cpu=0:00:00.1, real=0:00:00.0, peak res=985.4M, current mem=985.4M)
+[12/20 12:13:45    182s] 
+[12/20 12:13:45    182s] *** Memory Usage v#1 (Current mem = 1080.684M, initial mem = 179.895M) ***
+[12/20 12:13:45    182s] 
+[12/20 12:13:45    182s] *** Summary of all messages that are not suppressed in this session:
+[12/20 12:13:45    182s] Severity  ID               Count  Summary                                  
+[12/20 12:13:45    182s] WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/20 12:13:45    182s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[12/20 12:13:45    182s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/20 12:13:45    182s] WARNING   IMPFP-4026           4  Adjusting core to '%s' to %f due to trac...
+[12/20 12:13:45    182s] WARNING   IMPTS-282           92  Cell '%s' is not a level shifter cell bu...
+[12/20 12:13:45    182s] WARNING   IMPEXT-2766          4  The sheet resistance for layer %s is not...
+[12/20 12:13:45    182s] WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+[12/20 12:13:45    182s] WARNING   IMPEXT-2776          3  The via resistance between layers %s and...
+[12/20 12:13:45    182s] WARNING   IMPVL-346           30  Module '%s' is instantiated in the netli...
+[12/20 12:13:45    182s] WARNING   IMPVL-159         1435  Pin '%s' of cell '%s' is defined in LEF ...
+[12/20 12:13:45    182s] WARNING   IMPDB-2504          30  Cell '%s' is instantiated in the Verilog...
+[12/20 12:13:45    182s] ERROR     IMPPP-344            3  You can only specify pin_width for strip...
+[12/20 12:13:45    182s] WARNING   IMPSR-559            1  Cannot route core pins and converter pin...
+[12/20 12:13:45    182s] WARNING   IMPSR-4064           1  sroute -connect { secondaryPowerPin } co...
+[12/20 12:13:45    182s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[12/20 12:13:45    182s] WARNING   IMPSR-1256           2  Cannot find any CORE class pad pin of ne...
+[12/20 12:13:45    182s] WARNING   TCLCMD-513           7  The software could not find a matching o...
+[12/20 12:13:45    182s] ERROR     TCLCMD-917          14  Cannot find '%s' that match '%s'         
+[12/20 12:13:45    182s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[12/20 12:13:45    182s] ERROR     TECHLIB-1318        20  All the table values in the '%s' group a...
+[12/20 12:13:45    182s] *** Message Summary: 1684 warning(s), 37 error(s)
+[12/20 12:13:45    182s] 
+[12/20 12:13:45    182s] --- Ending "Innovus" (totcpu=0:03:02, real=0:24:13, mem=1080.7M) ---
