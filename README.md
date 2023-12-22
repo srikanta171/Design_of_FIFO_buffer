@@ -48,9 +48,9 @@ Thank you for exploring the world of FIFO buffers with us!
 
 ---
 
-#  ASIC Design: A Practical Project from RTL to GDS II
+#  ASIC Design Flow Guide : Implementation of this Project from RTL to GDS II
 
-Welcome to our comprehensive guide on ASIC design, where we have designed project from RTL to GDS II. This guide is perfect for those who want to see theory put into practice and gain hands-on experience.
+Welcome to our comprehensive guide on ASIC design, where we have designed the project from RTL to GDS II. This guide is perfect for those who want to see theory put into practice and gain hands-on experience.
 ## Content Overview
 - **RTL Design**
 - **RTL Simulation**
