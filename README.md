@@ -70,9 +70,25 @@ Welcome to our comprehensive guide on ASIC design, where we have designed the pr
 ## Let's get started
 
 - **RTL Design**: Learn how we converted the project specifications into RTL code using Verilog/VHDL.
+  - For details understanding of the design [follow this](https://www.fpga4student.com/2017/01/verilog-code-for-fifo-memory.html).
 - **RTL Simulation**: Understand how we simulated the RTL code to verify the design functionality.
-- **Logic Synthesis**: Discover how we synthesized the RTL code into a gate-level netlist.
+  - ![image](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/main/rtl1/Screenshot%20from%202023-12-19%2011-35-51.png)
+
 - **Code Coverage**: Learn about our approach to code coverage to ensure robust and comprehensive testing.
+  - follow this line to get the code covergage
+```
+irun
+	/home/vlsi1/23EC4224/project/fifo/rtl1/fifo.v
+	/home/vlsi1/23EC4224/project/fifo/rtl1/fifo_tb.v
+	-access +rwc
+	-coverage all
+	-gui
+```
+after execution of this command, you will get the report:
+To view the detailed information, [download this](coverage/html_20-12-2023_02~55~38) and run the index.html to show the results.
+
+- **Logic Synthesis**: Discover how we synthesized the RTL code into a gate-level netlist.
+
 - **DFT Insertion**: Understand how we prepared the design for post-fabrication testing.
 - **Physical Design**: Delve into the Place and Route process and how we created the final GDSII file.
 
