@@ -57,6 +57,7 @@ Welcome to our comprehensive guide on ASIC design, where we have designed the pr
 - **Code Coverage**
 - **Logic Synthesis**
 - **DFT Insertion**
+- **logic Equivalence Check**
 - **Physical Design**
   - **Design Import**
   - **Floorplan (includes Powerplan)**
@@ -130,6 +131,13 @@ to see the timing report [click here](synthesis/timing_fast.txt).
 
 ---
 - **DFT Insertion**: Understand how we prepared the design for post-fabrication testing. For now, I have just skipped the DFT insertion process.
+- **logic Equivalence Check**: The term “Logic Equivalence Check” in ASIC design flow refers to the process of verifying that a design’s netlist is logically equivalent to its original RTL (Register Transfer Level) description. This step is crucial to ensure that no unintended changes or errors were introduced during the translation process from RTL to the netlist.
+	- Here are some key points about Logic Equivalence Check (LEC):
+
+		- Purpose: Ensures the netlist reflects the original RTL design accurately.
+		- Importance: Critical for maintaining design integrity throughout the ASIC design flow.
+  - To check the lec, I have made a file that will automate the lec process, [here](equivalance_check/eqv_check.do) is the file.
+  - [Click Here](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/da863f4761c694e6b617bbd12c1ab5b44c729518/equivalance_check/fifo_lec.log#L63) is the result.
 - **Physical Design**: Delve into the Place and Route process and how we created the final GDSII file.
 
 ---
@@ -151,25 +159,27 @@ When importing a design into Cadence Innovus, the following files are required:
 
 3. View Definition File: This file is actually called Multi Mode Multi Corner (MMMC) view definition file. This file takes timing library files(.lib files), Capacitance Tables, and SDC files generated during the synthesis stage ([this file](synthesis/fifo_sdc.sdc)) as inputs. Then creates Best and Worst case rc_corners for PVT analysis of the chip. Also, creates Max and Min libraries for timing and delay.
 
-4. IO Assignment File: This file is used for assigning the IO pins in a specific order. If this file is not used then the tool will automatically assign the input output ports in a convenient order. This file also places the IO pads and Corner cells.
+4. IO Assignment File: [This file](physical_design/fifo_iopad.io) is used for assigning the IO pins in a specific order. If this file is not used then the tool will automatically assign the input output ports in a convenient order. This file also places the IO pads and Corner cells.
 
-- **Floorplan (includes Powerplan)**: In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network.
-- **Placement & Place Opt**: After floorplanning, the components of the design are placed onto the layout, and their positions are optimized for performance and other factors.
-- **Clock Tree Synthesis & CTS Opt**: This involves building a clock distribution network (clock tree) across the chip and optimizing it to ensure that all elements receive the clock signal on time.
-- **Routing & Route Opt**: The final step involves connecting the components with wires (routing) and optimizing the wire paths to minimize delays and other issues.
+- **Floorplan (includes Powerplan)**: In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network. Check [my logs](physical_design/innovus.log5) or check [this cmd](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/da863f4761c694e6b617bbd12c1ab5b44c729518/physical_design/innovus.cmd5#L33) to execute the floorplan.
+- **Placement & Place Opt**: After floorplanning, the components of the design are placed onto the layout, and their positions are optimized for performance and other factors. Check [my logs](physical_design/innovus.log5) or check [this cmd](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/da863f4761c694e6b617bbd12c1ab5b44c729518/physical_design/innovus.cmd5#L56)
+- **Clock Tree Synthesis & CTS Opt**: This involves building a clock distribution network (clock tree) across the chip and optimizing it to ensure that all elements receive the clock signal on time. Check [my logs](physical_design/innovus.log5) or check [this cmd](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/da863f4761c694e6b617bbd12c1ab5b44c729518/physical_design/innovus.cmd5#L207).
+- **Routing & Route Opt**: The final step involves connecting the components with wires (routing) and optimizing the wire paths to minimize delays and other issues. Check [my logs](physical_design/innovus.log5) or check [this cmd](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/da863f4761c694e6b617bbd12c1ab5b44c729518/physical_design/innovus.cmd5#L283)
 
-- **Signoff**
+- **Signoff**: In physical design, signoff is the process of verifying that the design meets all the necessary requirements before it can be sent for fabrication. Signoff checks are a series of verification steps that the design must pass before it can be taped out. The signoff process involves incremental fixes across the board using one or more check types, and then retesting the design. There are several types of signoff checks such as:
+- Design Rule Checking (DRC): This check verifies that the layout of a chip satisfies a series of recommended parameters called design rules.
+- Layout Versus Schematic (LVS) verification: This check ensures that the layout of the design matches the schematic.
+- Formal Verification: This check verifies that the design meets the specified functional requirements.
+- IR Drop Analysis: This check ensures that the voltage drop across the chip is within acceptable limits.
+- Power Analysis: Power analysis is performed to ensure that the chip meets the power requirements and to identify any potential power issues early in the design process.
+- Signal Integrity Analysis: This check ensures that the signal quality is within acceptable limits.
+- ESD checks: ESD stands for Electrostatic Discharge. ESD check is a process of verifying that the design meets the necessary requirements to prevent damage from electrostatic discharge.
 
-## Verification
+After the signoff process, the design is ready for fabrication ¹³.
 
-lists of verification performed during the flow, which are essential to ensure the design meets all specifications and is ready for production:
+Final Result of the Flow:
 
-- Formal Verification (LEC)
-- Physical Verification (DRC, LVS)
-- STA, Signal Integrity Analysis
-- IR Drop Analysis
-- Power Analysis
-
+![image](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/main/physical_design/Screenshot%20from%202023-12-20%2013-11-29.png)
 
 ---
 
