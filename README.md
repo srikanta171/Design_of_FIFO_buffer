@@ -48,7 +48,7 @@ Thank you for exploring the world of FIFO buffers with us!
 
 ---
 
-#  ASIC Design Flow Guide : Implementation of this Project from RTL to GDS II
+#  ASIC Design Flow: Implementation of this Project from RTL to GDS II
 
 Welcome to our comprehensive guide on ASIC design, where we have designed the project from RTL to GDS II. This guide is perfect for those who want to see theory put into practice and gain hands-on experience.
 ## Content Overview
@@ -88,10 +88,49 @@ after execution of this command, you will get the report:
 To view the detailed information, [download this](coverage/html_20-12-2023_02~55~38) and run the index.html to show the results.
 
 - **Logic Synthesis**: Discover how we synthesized the RTL code into a gate-level netlist.
+---
+The commands I have provided [here](synthesis/scirpt_synthesis.tcl) are used for the synthesis of a hardware design. The commands are a sequence of commands that are executed in a tool Genus. The commands are used to synthesize the RTL design, into a gate-level netlist. The netlist is then used for further stages of the design flow such as place and route, timing analysis, power analysis, etc.
 
-- **DFT Insertion**: Understand how we prepared the design for post-fabrication testing.
+Here is a step-by-step explanation of the commands:
+
+1. `set_attr init_lib_search_path /home/vlsi1/Downloads/scl_pdk/stdlib/fs120/liberty/lib_flow_ff/`: This command sets the path to the standard library files for the synthesis tool.
+
+2. `set_attr init_hdl_search_path /home/vlsi1/23EC4224/project/fifo/rtl1/`: This command sets the path to the RTL files for the synthesis tool.
+
+3. `set_attr library tsl18fs120_scl_ff.lib`: This command sets the name of the library file that contains the standard cell definitions.
+
+4. `read_hdl fifo.v`: This command reads the RTL file for the design.
+
+5. `elaborate`: This command elaborates the design hierarchy.
+
+6. `read_sdc /home/vlsi1/23EC4224/project/fifo/synthesis/constraints.sdc`: This command reads the constraints file for the design.
+
+7. `set_attribute syn_generic_effort high`: This command sets the synthesis effort level for the generic synthesis stage to high.
+    And the effort level can be High, low, and medium.
+8. `set_attribute syn_map_effort high`: This command sets the synthesis effort level for the mapping stage to high.
+
+9. `set_attribute syn_opt_effort high`: This command sets the synthesis effort level for the optimization stage to high.
+
+10. `syn_generic`: This command performs the generic synthesis stage.
+
+11. `syn_map`: This command performs the mapping stage.
+
+12. `syn_opt`: This command performs the optimization stage.
+
+13. `write_hdl > fifo_netlist.v`: This command writes the synthesized netlist to a file named `fifo_netlist.v`.
+	to see the netlist file [click here](synthesis/fifo_netlist.v).
+15. `write_sdc > fifo_sdc.sdc`: This command writes the constraints file to a file named `fifo_sdc.sdc`.
+
+16. `report_area > area_fast.txt`: This command generates a report of the area of the design and writes it to a file named `area_fast.txt`.
+to see the area report [click here](synthesis/area_fast.txt).
+17. `report_power > power_fast.txt`: This command generates a report of the power consumption of the design and writes it to a file named `power_fast.txt`.
+to see the power report [click here](synthesis/power_fast.txt).
+18. `report_timing > timing_fast.txt`: This command generates a report of the timing of the design and writes it to a file named `timing_fast.txt`.
+to see the timing report [click here](synthesis/timing_fast.txt).
+
+---
+- **DFT Insertion**: Understand how we prepared the design for post-fabrication testing. For now, I have just skipped the DFT insertion process.
 - **Physical Design**: Delve into the Place and Route process and how we created the final GDSII file.
-
 
 ---
 
@@ -99,9 +138,21 @@ To view the detailed information, [download this](coverage/html_20-12-2023_02~55
 
 Welcome to our comprehensive guide on ASIC Physical Design Flow, also known as Netlist to GDSII Flow or PNR Flow. This guide is perfect for those who want to understand the practical aspects of chip creation.
 
-### Content Overview
+### Let's get started
 
 - **Design Import**: This is the initial phase where the design data is imported into the physical design tools.
+When importing a design into Cadence Innovus, the following files are required:
+
+1. Design Netlist File (Verilog): This file is created after the synthesis process and can either be generated using CADENCE Genus. Generally, it is a Modified Netlist, because I have to instantiate IOpad cells to the input and output port. Here is the [modified netlist](synthesis/fifo_netlist.v), from [this line](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/da79ddadd00581af18d6dfca4b3f39bc342a1c9e/synthesis/fifo_netlist.v#L899) modification is required.
+2. Physical Library Files (LEF Files): There are three kinds of LEF files required which are:
+    * Technology LEF File: This file contains information about the Metal layers, Vias, design rules, etc. for a certain technology.
+    * Standard Cell LEF File: This file contains the physical view of the standard cells of the current technology.
+    * IO Cell LEF File: This file contains the physical view of the IO cells, corner cells, IO fillers of the current technology.
+
+3. View Definition File: This file is actually called Multi Mode Multi Corner (MMMC) view definition file. This file takes timing library files(.lib files), Capacitance Tables, and SDC files generated during the synthesis stage ([this file](synthesis/fifo_sdc.sdc)) as inputs. Then creates Best and Worst case rc_corners for PVT analysis of the chip. Also, creates Max and Min libraries for timing and delay.
+
+4. IO Assignment File: This file is used for assigning the IO pins in a specific order. If this file is not used then the tool will automatically assign the input output ports in a convenient order. This file also places the IO pads and Corner cells.
+
 - **Floorplan (includes Powerplan)**: In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network.
 - **Placement & Place Opt**: After floorplanning, the components of the design are placed onto the layout, and their positions are optimized for performance and other factors.
 - **Clock Tree Synthesis & CTS Opt**: This involves building a clock distribution network (clock tree) across the chip and optimizing it to ensure that all elements receive the clock signal on time.
