@@ -44,19 +44,15 @@ Remember that proper depth calculation is critical to preventing data loss durin
 
 For a deeper understanding and practical implementation, refer to the documentation and resources provided with your hardware or software platform.
 
-Thank you for exploring the world of FIFO buffers with us!
 
 ---
 
 #  ASIC Design Flow: Implementation of this Project from RTL to GDS II
 
-Welcome to our comprehensive guide on ASIC design, where we have designed the project from RTL to GDS II. This guide is perfect for those who want to see theory put into practice and gain hands-on experience.
 ## Content Overview
 - **RTL Design**
 - **RTL Simulation**
-
 - **Logic Synthesis**
-
 - **Physical Design**
   - **Design Import**
   - **Floorplan (includes Powerplan)**
@@ -73,7 +69,6 @@ Welcome to our comprehensive guide on ASIC design, where we have designed the pr
   - For details understanding of the design [follow this](https://www.fpga4student.com/2017/01/verilog-code-for-fifo-memory.html).
 - **RTL Simulation**: Understand how we simulated the RTL code to verify the design functionality.
   - ![image](https://github.com/srikanta171/Design_of_FIFO_buffer/blob/main/rtl1/Screenshot%20from%202023-12-19%2011-35-51.png)
-
 
 - **Logic Synthesis**: Discover how we synthesized the RTL code into a gate-level netlist.
 ---
